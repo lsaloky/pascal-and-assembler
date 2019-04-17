@@ -1,0 +1,53 @@
+        {vstupne slovo sa zapise v spravnom poradi na ine miesto}
+              {pasky a potom sa presunie na spravne miesto}
+           {priklad: @aababb@@@@@@@@}
+S0:while znak<>@ do begin
+     if znak=a then begin
+       znak:=c;
+       while znak<>@ do begin right end;
+       right;
+       while znak<>@ do begin right end;
+       znak:=a;                       {premiestnenie acka na nove miesto}
+       while znak<>@ do begin left end;
+       left;
+       while znak<>@ do begin left end; {navrat na zaciatok cisla}
+     end;
+     right;
+   end;     {premiestnenie vsetkych acok ukoncene - stav @ccbcbb@aaa@@@@}
+   while znak<>@ do begin
+     if znak=b then begin      {teraz becka}
+       znak:=c;
+       while znak<>@ do begin right end;
+       right;
+       while znak<>@ do begin right end;
+       znak:=b;                       {premiestnenie becka na nove miesto}
+       while znak<>@ do begin left end;
+       left;
+       while znak<>@ do begin left end; {navrat na zaciatok cisla}
+     end;
+     right;
+   end;      {premiestnenie vsetkych becok ukoncene - stav @cccccc@aaabbb@}
+{ak moze byt vystupne slovo na inom mieste pasky, tak je uloha ukoncena.}
+{citacia hlava je nad 1.polickom cisla}
+   while znak<>@ do begin
+     while znak<>d do begin right end;
+     right;
+     if znak=a then begin
+       znak:=d;
+       while znak<>@ do begin left end;
+       left;
+       while znak=c do begin left end;
+       right;
+       znak:=a;
+     end;
+     if znak=b then begin
+       znak:=d;
+       while znak<>@ do begin left end;
+       left;
+       while znak=c do begin left end;
+       right;
+       znak:=b;
+     end;
+   end;
+
+

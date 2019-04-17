@@ -1,0 +1,20 @@
+		Jednoduchy ale efektny morphing - editory a ukazky
+
+BMORPH.PAS     nefunguje, morphing Bezierovych kriviek
+BMORPH2.PAS    to iste, neviem preco nefunguje
+HODINY.PAS     hodiny s mofphujucimi cislicami. Potrebuje HODINY.DAT
+MORFDEMO.PAS   moj prvy morphing
+MORPHING.PAS   asi tiez jeden z prvych
+MM1.PAS        MukoSoft MorfEdit 1.0
+MM1VIEW.PAS    MukoSoft MorfEdit 1.0 prezerac
+MM2.PAS        MukoSoft MorfEdit 2.0
+MM2VIEW.PAS    MukoSoft MorfEdit 2.0 prezerac
+MM3.PAS                          3.0, nefunguje
+MM3TPU.PAS     kniznica procedur pre MM3
+NOVY.PAS       urobi prazdny subor pre MorfEdit
+               ----- datove subory pre morphing -----
+HODINY.DAT     pre MM 2.0
+LUBO.DAT       pre MM 2.0
+MORPH000.DAT   pre MM 1.0, pocet ciar nastav na 25
+MORPH001.DAT   takisto
+MORPH002.DAT   pre MM 1.0, pocet ciar nastav na 35

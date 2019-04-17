@@ -1,0 +1,66 @@
+
+
+                          L O D I C K Y
+
+                       n vod a dokument cia.
+          ---------------------------------------------------
+
+     Hra LODICKY je (ne)logick  hra pre jedn‚ho alebo dvoch hr cov. Cielom
+hry je n jst na hracom pl ne s£pera vsetky jeho lode. Je mozn‚ hrat proti
+druh‚mu hr covi, alebo proti poc¡tacu.
+     Hr  sa na princ¡pe tahov, hr ci sa striedaj£. Po znicen¡ celej lode
+ide hr c znova.
+     Ovl danie je pomocou mysi alebo kl vesnice.
+
+Hardwarov‚ n roky: PC 286
+                   asi 0.5 MB XMS
+                   niekolko KB priestoru na HDD
+                   VGA grafick  karta.
+
+Doporucen‚:        mys
+                   0.5 MB priestoru na HDD (pre pln£ instal ciu)
+                   Sound Blaster alebo kompatibiln‚.
+
+
+
+                          HLAVNE MENU:
+                          ------------
+
+Mys                    ³Kl vesnica³Povel
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ikonka Prvy hrac       ³     P    ³prep¡nanie medzi poc¡tacom a clovekom
+       Druhy hrac      ³     D    ³analogicky
+       Obtiaznost      ³     O    ³velkost hracieho pl nu (5x5, 7x7, 9x9)
+       Start           ³     S    ³zaciatok hry
+       Najleps¡ hr ci  ³     N    ³tabulka najleps¡ch
+       Inform cie o hre³     I    ³inform cie o tvorcoch
+       Koniec          ³     K    ³koniec hry
+r mcek s menom 1. hr ca³     1    ³zmena mena 1. hr ca
+       s menom 2. hr ca³     2    ³zmena mena 2. hr ca
+
+                        ROZMIESTNOVANIE LODICIEK:
+                        -------------------------
+
+Mys                    ³Kl vesnica³Povel
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+prav‚ tlacidlo         ³  medzera ³otocenie lode o 90 stupnov
+lav‚ tlacidlo          ³   Enter  ³polozenie lode
+pohyb mysou            ³s£radnice ³presun lode na dan‚ s£radnice
+
+                            HLADANIE LODICIEK:
+                            ------------------
+Mys                    ³Kl vesnica³Povel
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+pohyb mysou            ³  s£rad-  ³nastavenie kurzora nad zelan‚ pol¡cko
+lav‚ tlacidlo          ³   nice   ³odkrytie pol¡cka pod kurzorom
+
+
+Pozn mky:
+---------
+
+     Zad vanie s£radn¡c pri hre kl vesnicou:
+V lubovolnom porad¡ treba zadat jedno p¡smeno (A az I) a jedno c¡slo (1 az 9),
+podla velkosti hracieho pl nu.
+
+     Rozmiestnovanie lodiciek:
+Lodicky sa nesm£ dotykat ani bokom ani rohom pol¡cka.

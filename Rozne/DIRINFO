@@ -1,0 +1,78 @@
+		Programy, ktore do ziadnej skatulky nepatrili
+
+                             ----- JOYSTICK -----
+JOYSTICK.PAS    programy pre pracu s joystickom
+JOY2.PAS
+JOY3.PAS
+
+                             ----- TLACIAREN -----
+TLACDEMO.PAS    demo pre STAR LC 20
+STAR.PAS        obsluha STAR LC 20, lepsie je to cez TV
+
+                             ----- KLAVESNICA -----
+KLAV.PAS        spracovanie viacnasobneho stlacenia klaves
+KLAVTEST.PAS    test funkcnosti klavesnice
+KLAVPRIZ.PAS    spracovanie LOCK, pridane do unitu KEYBOARD
+KLAVDEMO.PAS    demo na unit KeyBoard
+
+                             ----- DISKY -----
+TOPTEN.PAS      najdenie 10 najdlhsich suborov na disku (kvoli defragmentacii)
+SEKTOR.PAS      pristup k sektorom na disku (INT 13h,25h,..)
+MTESTER.PAS     diagnostika diskov, okrem ineho zisti, kolko (mega)bajtov
+                sa straca pri danej velkosti clustra
+USPORIAD.PAS    nieco so subormi na disku
+STROM.PAS       vypisanie stromovej struktury disku
+DISKALL.PAS     kadeco o diskoch, nie moje rutiny
+DISKINFO.PAS    podobne
+
+                             ----- INE I/O ZARIADENIA -----
+CEDECKO.PAS     ovladanie zvukoveho CD
+MYS3.PAS        pokusy s mysou a zoznam prikazov INT 33h
+SAMPLE.PAS      prehravanie zvukoveho samplu na SB - nefunguje
+ZVUK.PAS        pokus o skrotenie SB
+ZVUK_PP.PAS     prehravanie zvukoveho samplu, pouziva unit SMIX
+
+                             ----- VYLEPSENIA ROZNYCH PROGRAMOV ----
+ZIPSHELL.PAS    shell pre efektivnejsie ovladanie PKZIPu
+MODULES.PAS     zisti cas hrania vsetkych suborov MOD
+PANZER.PAS      predlzovanie sceneria v PG
+MUKOPANZ.PAS    finty na Panzer Generala, verzia 2
+KONVERT.PAS     konverzia textovych suborov T602 pre el. pis. stroj OPTIMA
+3DSEARCH.PAS    prehladavanie kniznic materialov 3D studia
+
+                             ----- SYSTEMOVE UTILITY -----
+RESET.PAS       zapise, kedy bol zapnuty alebo zresetovany pocitac
+KONTROLA.PAS    v pravidelnych intervaloch spusta zadane programy (NDD,..)
+LSSCAN.PAS      moj prvy a posledny (?) antivirus
+MTM.INC
+MTM.PAS         nedokonceny diagnosticky program - CELY v assembleri
+DATUMCAS.PAS    zapise datum a cas do PRACA.TXT
+GENERUJ.PAS     univerzalny zavadzac APPEND - generuje davkovy subor
+FINTA.PAS       finta so skryvanim suborov - adresar a zaroven meno disku
+TRIEDCD.PAS     do adresara POPIS_CD zapise zoznam pozadovanych typov suborov
+
+                             ----- NA VOLNE CHVILE -----
+BASNICKY.PAS    nahodne basnicky generovane pocitacom
+HLAVOLAM.PAS    bludiskovy hlavolam, TXT 80x25
+KENO.PAS        nahodne zrebovanie KENO
+PAMAT.PAS       test pamati na cisla
+PROG1997.PAS    informacie o predpokladoch ekonomickeho a hospodarskeho
+PROG1997.DAT    vyvoja v roku 1997
+
+                             ----- ROZNE -----
+POZRIDBF.PAS    prezeranie .DBF suborov
+QSORT.PAS       moje triedenie v porovnani s QuickSortom
+SPEED.PAS       meranie rychlosti procesora
+TEST.PAS        testovanie rychlosti grafickych rutin
+POCETSLO.PAS    pocet slov v texte
+TANALYZA.PAS    analyza textu
+BLBOSTI.PAS     vyradenie mysi,klavesnice,zobrazovania
+BLINK.PAS       16 farieb pozadia v 80x25 textovy rezim kontra blikanie
+LVDEMO.PAS      LuboVision - nieco ako TV, pouziva unit OKNA
+MR610.PAS       nedokonceny simulator MR 610
+MR610.INC
+BENZIN.PAS      analyza spotreby benzinu
+BENZIN.DAT
+80387.PAS       pokusy s koprocesorom
+MOJEPROG.PAS    informacie o mojich programoch
+MOJEPR2.PAS     vylepsena verzia

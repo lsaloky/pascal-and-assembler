@@ -1,0 +1,120 @@
+Typ hry: tahova strategia.
+
+Hrac ovlada jednu politicku stranu, ostatne pocitac.
+
+Obtiaznost: lahka, stredna, tazka.
+
+
+--------------------------
+Dolezite globalne premenne:
+
+PocetStran:word
+NazovStrany:array[1..16] of string
+Politik:array[1..16,1..3] of string
+VolProgram:array[1..16,1..15] of byte
+KrajPref:array[1..16,1..8] of real
+Pref:array[1..16] of real
+
+--------------------------
+
+Volebne programy - kategorie
+
+1. Hospodarsky rast
+   1.1 este zrychlit
+   1.2 udrzat
+   1.3 spomalit
+   1.4 nezmienovat sa o tom
+  
+2. Nezamestnanost
+   2.1 zlepsime stav
+   2.2 udrzime stav
+   2.3 znizime na 10 %
+   2.4 zlikvidujeme nezam.
+   2.5 nezmien. sa o tom
+
+3. Zahranicna politika
+   3.1 EU, NATO
+   3.2 len NATO
+   3.3 len EU
+   3.4 nic
+   3.5 nezmien. sa o tom
+
+4. Demokraticke hodnoty
+   4.1 zlepsime stav
+   4.2 udrzime sucasny stav
+   4.3 posilnime moc statu
+   4.4 zlikvidujeme demokraciu
+   4.5 nezmien. sa o tom
+
+5. Samosprava
+   5.1 viac prav
+   5.2 je to v poriadku
+   5.3 menej prav
+   5.4 nezmien. sa o tom 
+
+6. Boj proti zlocinnosti
+   6.1 pritvrdit za kazdu cenu
+   6.2 pritvrdit v medziach ustavy
+   6.3 je to OK
+   6.4 polavit, setrit
+   6.5 nezmien. sa o tom
+
+7. Agrarna politika
+   7.1 sukr. vlastnictvo
+   7.2 statne vlastnictvo
+   7.3 zmiesane
+   7.4 nezmien. sa o tom
+
+8. Vzdelanie
+   8.1 zlepsit stav
+   8.2 udrzat suc. stav
+   8.3 vzdel. nie je dolezite
+   8.4 nezmien. sa o tom
+
+9. Socialna politika
+   9.1 zlepsit stav
+   9.2 udrzat stav
+   9.3 znizit soc. vydavky
+   9.4 nezmien. sa o tom
+
+10.Zdravotnictvo
+   10.1 zlepsit stav
+   10.2 udrzat stav
+   10.3 mozme aj polavit
+   10.4 nezmien. sa o tom
+
+11.Male a stredne podnikanie
+   11.1 vytvorit lepsie podmienky
+   11.2 udrzat stav
+   11.3 obmedzit
+   11.4 nezmien. sa o tom
+
+12.Vztah k mensinam
+   12.1 viac prav
+   12.2 je to OK
+   12.3 odobrat im prava
+   12.4 nezmien. sa o tom
+
+13.Inflacia
+   13.1 zlepsit stav
+   13.2 udrzat stav
+   13.3 polavit
+   13.4 nezmien. sa o tom
+
+14.Ekologia
+   14.1 zlepsit stav
+   14.2 udrzat stav
+   14.3 polavit, setrit
+   14.4 nezmien. sa o tom
+
+15.Kultura
+   15.1 rozvijat, ale potlacit zap. vplyvy
+   15.2 rozvijat, uplne slobodne
+   15.3 udrzat suc. stav
+   15.4 zbytocne vydavky
+   15.5 nezmien. sa o tom
+
+-----------------------
+
+Pozn. Chyba treti politik pre KSS!!!!!
+

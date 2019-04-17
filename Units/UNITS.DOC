@@ -1,0 +1,225 @@
+                        MukoSoft kniznice prikazov
+
+
+         **************************************************************
+                1.               M A I N G R . T P U
+                                  graficka kniznica
+         **************************************************************
+
+
+     1.0. HARDWAROVE A SOFTWAROVE POZIADAVKY:
+     ----------------------------------------
+procesor 286 a vyssie
+graficka karta VGA a vyssie
+
+pri procedurach a funkciach oznacenych ÛPÛ je nutne pre spravne fungovanie
+mat nastavenu paletu Prechody.MP alebo podobnu, kde prve styri bity farby
+urcuju odtien farby a dalsie styri urcuju jas farby.
+
+     1.1. POPIS PREMENNYCH POUZIVANYCH UNIT-OM.
+     ------------------------------------------
+
+OknoXMin,OknoXMax,OknoYMin,OknoYMax:word;
+     Tieto premenne ohranicuju oblast, do ktorej sa kresli. Okno respektuju
+tieto procedury: PrilepBMPPO, VypisPO.
+     Standardne je nastavene okno totozne s okrajmi obrazovky.
+
+VSeg:word;
+     Premenna oznacuje segment, do ktoreho prebieha kreslenie grafickych
+objektov. Respektuju vsetky procedury. Standardne nastavene na $A000.
+
+Color:byte;
+     Premenna oznacuje aktualnu farbu, s ktorou sa pracuje. Respektuju
+vsetky procedury okrem Vypis a VypisPO, u ktorych je farba parametrom.
+
+VypinajKurzorMysi:boolean;
+     Ak je nastavene na TRUE, pred kazdym zapisom do VideoRAM prebehne
+vypnutie kurzora mysi. Niekedy sa tym program vyrazne spomaluje. Standardne
+nastavene na FALSE.
+
+     1.2. ZAKLADNE PROCEDURY A FUNKCIE.
+     ----------------------------------
+
+InicializujGrafiku;          zapne obrazovy mod 13h, t.j. 320x200x256
+ZavriGrafiku;                                    3h, t.j. text 80x25
+ZmazObrazovku;               zmaze obrazovku (vyplni farbou 0)
+PolozBod(x,y,Farba);         nakresli bod na sur. [x,y] s farbou Farba
+i:=ZistiBod(x,y);            funkcia, vrati farbu bodu [x,y]
+CiaraVodorovna(x,y,Dlzka);   nakresli vodorovnu ciaru s lavym bodom
+                             [x,y], dlzkou Dlzka a farbou Color
+CiaraZvisla(x,y,Dlzka);      analogicky; horny bod je [x,y]
+VyplnPlochu(x,y,dx,dy);      vyplni obdlznikovu plochu s lavym hornym
+                             bodom [x,y], rozmermi dx,dy a farbou Color
+
+     1.3. PROCEDURY PRE PRACU S BITMAPAMI
+     ------------------------------------
+
+NacitajBMP(Subor,p);         nacita bitmapu zo suboru Subor a rezervuje pre nu
+                             dynamicku pamat na ktoru ukazuje pointer p. Subor
+                             musi byt typu .MB, otvoreny a nastaveny na
+                             spravnej pozicii
+PrilepBMP(x,y,p);            prilepi bitmapu na ktoru ukazuje p na
+                             suradnice [x,y].
+PrilepBMPPO(x,y,p);          prilepi bitmapu priehladne (t.j. kde je
+                             v prilepovanej bitmape 0, nekresli sa) a
+                             respektuje okno - premenne OknoXXXX
+PrilepBMPPF(x,y,p,Odtien);   (ÛPÛ) prilepi priehladne a zmeni vsetky farby v
+                             bitmape na odtien Odtien, jas sa zachovava.
+StiahniBMP(x,y,dx,dy,p);     nacita z obazovej pamate bitmapu s lavym hornym
+                             rohom [x,y], rozmermi dx,dy; ulozi
+                             ju do haldy a nastavi na nu pointer p.
+
+     1.4. PROCEDURY PRE PRACU S FONTMI.
+     ----------------------------------
+
+NacitajFont(S,p);            nacita font do haldy a nastavi nan pointer p.
+                             S je nazov .MSF suboru s fontom.
+Vypis(x,y,p,Text,Odtien);    (ÛPÛ) Vypise text Text na suradnice [x,y],
+                             p udava font nacitany procedurou NacitajFont.
+VypisPO(x,y,p,Text,Odtien);  (ÛPÛ) analogicky ako PrilepBMPPO, lisi sa od
+                             predchadzajucej procedury priehladnostou a
+                             respektovanim okna.
+LengthDiak(s);		     Urci dlzku retazca so zohladnenim mrtvych klavesov
+			     ` ~ | ^ (diakritika).
+LengthPixel(p,s);	     Urci dlzku retazca s na obrazovke v pixeloch
+			     pri fonte p.
+
+     1.5. PROCEDURY PRE PRACU S FARBAMI A PALETOU
+     --------------------------------------------
+
+NastavFarbu(Cislo,r,g,b);    farbe s cislom Cislo priradi farbove zlozky RGB
+ZistiFarbu(Cislo,r,g,b);     vrati farbove zlozky farby Cislo
+NacitajPaletu(S,p);          nahra paletu z .MP suboru - S a rezervuje 768
+                             bajtov v pamati, na ktore bude ukazovat p
+NastavPaletu(p);             nastavi taku paletu, na ktoru ukazuje p
+
+     1.6. DALSIE PROCEDURY.
+     ----------------------
+
+Obdlznik(x,y,dx,dy);         kresli obdlznik s farbou Color
+Ramcek(x,y,dx,dy,Vnutro);    kresli obdlznik farbou Color a vyplni ho farbou
+                             Vnutro.
+CakajNaVOI;                  caka na vertikalny obnovovaci impulz monitora
+Tlacidlo3D(x,y,RozX,RozY,P,Napis,OdtTlac,OdtNap,False);
+                             (ÛPÛ) vykresli tlacidlo na sur. [x,y] o velkosti
+                             RozX a RozY, farbe OdtTlac; fontom P a farbou
+                             OdtNap vycentruje text Napis. Posl. parameter
+                             - ci je stlacene.
+
+
+         **************************************************************
+                2.             B M P U T I L . T P U
+                                 graficka kniznica
+         **************************************************************
+
+     2.0. HARDWAROVE A SOFTWAROVE POZIADAVKY
+     ---------------------------------------
+
+ako MAINGR.TPU
+
+     2.1. PROCEDURY PRE PRACU S BITMAPAMI V HALDE
+     --------------------------------------------
+
+NahodnaBMP(dx,dy,Odtien,p);  (ÛPÛ) vygeneruje nahodnu bitmapu o rozmeroch
+                             dx,dy a farbe Odtien (nahodne sa generuje
+                             len jasova zlozka); p bude pointer na bitmapu.
+PriemerujBMP(P);             na bitmapu P bude aplikovany graficky efekt
+                             priemerovania farieb (v n v„znosti na
+                             NahodnaBMP).
+PreklopBMP(P,Os);            preklopi bitmapu P podla osi Os typu char,
+                             pripustne znaky su: - | \ / (znazornuju os
+                             preklopenia). PRI DIAGONALNEJ OSI LEN STVORCOVE
+                             BITMAPY!!!
+RotujBMP(P);                 otoci bitmapu P okolo jej stredu o 90ø v smere
+                             hod. ruciciek. LEN STVORCOVE BITMAPY PARNEHO
+                             ROZMERU!!!
+UpravJasBMP(P,Nas,Del);      (ÛPÛ) upravi jasove zlozky farieb bitmapy tym,
+                             ze ich vynasobi Nas a vydeli Del. Ak jasova
+                             zlozka vyjde nad 15, bude nastavena na 15.
+Poznamka: na upravu odtiena je tu procedura PrilepBMPPF.
+
+     2.2. PROCEDURY PRE PRACU S BITMAPAMI V OBRAZOVEJ PAMATI
+     -------------------------------------------------------
+
+PosunVRAMSpredu(x,y,RozX,RozY,KolkoX,KolkoY);
+PosunVRAMZozadu(x,y,RozX,RozY,KolkoX,KolkoY);
+                             posunie obdlznikovu oblast na obrazovke so sur.
+                             laveho horneho rohu [x,y] a rozmermi RozX,RozY
+                             v smere vektora (KolkoX,KolkoY). Spredu znamena,
+                             ze bitmapa sa prekresluje od prveho bodu a
+                             Zozadu, ze od posledneho bodu. Nie je to jedno,
+                             ak sa zdrojova a cielova oblast prekryvaju.
+
+
+         **************************************************************
+                3.               M Y S . T P U
+                                prikazy pre mys
+         **************************************************************
+
+
+     3.0. HARDWAROVE POZIADAVKY
+     --------------------------
+
+procesor 086 a vyssie
+mys
+
+     3.1. PROCEDURY PRE PRACU S MYSOU
+     --------------------------------
+
+ZM;                          Zapnutie kurzora mysi
+VM;                          Vypnutie kurzora mysi
+OknoKurzora(x1,x2,y1,y2);    Nastavenie rozsahu, v ktorom sa moze pohybovat
+                             kurzor.
+ZistiPoziciu(x,y,Tlacidla);  Vrati v x,y poziciu kurzora mysi a v Tlacidla
+                             stav tlacidiel: 1 je Lave, 2 je Prave (Lave,
+                             Prave su preddefinovane konstanty)
+NastavKurzor(x,y);           Nastavi kurzor na suradnice [x,y].
+CakajNaPustenie;             Caka, kym uzivatel nepusti tlacidlo.
+NastavTvarKurzora(Ofs(Terc));LEN V GRAFICKOM REZIME nastavi tvar kurzora Terc.
+                             Preddefinovane kurzory su: Hodiny, SipkaDole,
+                             SipkaHore, SipkaVlavo, SipkaVpravo, Otaznik,
+                             Obycajny, Terc, Ruka.
+i:=ObsluzUdalost(@Aktiv,@Klav);
+                             funkcia ktora vrati poradove cislo oblasti na
+                             obrazovke, na ktoru uzivatel klikol.
+                             Aktivne oblasti sa zadavaju do pola
+                             Aktiv:array[1..Pocet+1,1..4] of wprd
+                             v tvare XMin,XMax,YMin,YMax; ukoncene (400,0,0,0).
+                             Klavesove skratky aktivnych oblasti su v poli
+                             Klav:array[1..Pocet+1] of char; ukoncene #255.
+                             Suradnice, na ktore bolo kliknute su v
+                             premennych MysX,MysY (MysX je vydelene 2, cize
+                             tieto suradnice vyjadruju poziciu na obrazovke
+                             v rezime 320*200; v inom rezime je nutny
+                             prepocet suradnic). Ak bolo kliknute pravym
+                             tlacidlom, bude k vystupnej hodnote pripocitane
+                             256.
+i:=ObsluzUdalostSHelpom(@Aktiv,@Klav,Pismo,@Help); LEN V GRAFICKOM REZIME
+                             (ÛPÛ) analogicky ako ObsluzUdalost, ale na sur.
+                             [192,0] pise on-line help pismom Pismo z pola
+                             Help: array[0..Pocet] of string[40], Help[0] sa
+                             pise ak kurzor nie je nad ziadnou aktivnou
+                             oblastou.
+
+
+         **************************************************************
+                3.          U T I L 3 8 6 . T P U
+                          rychle prikazy len od 386
+         **************************************************************
+
+
+     3.0. HARDWAROVE POZIADAVKY
+     --------------------------
+
+procesor 386 a vyssie
+koprocesor 80387 a vyssie, ak je uvedene v nazve procedury alebo funkcie.
+
+     3.1. GRAFICKE PROCEDURY
+     ------------------------
+
+ZmazObrazovku386;            Zmaze obrazovku v 320*200*256 farieb
+KopirujObrazovku386(S1,S2);  Kopiruje obrazove informacie medzi segmentmi
+                             S1 a S2 (premenne typu word).
+x:=Sin387(Arg);              vrati sinus argumentu typu extended
+x:=Cos387(Arg);              vrati cosinus argumentu typu extended
+

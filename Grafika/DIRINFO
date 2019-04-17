@@ -1,0 +1,57 @@
+			Graficke rutiny, nie animacie
+
+                             ----- kreslenie roznych objektov -----
+BEZIERTB.PAS   Bezierove krivky TURBO
+BEZIER.PAS     Bezierove krivky
+SRDCE.PAS      kreslenie srdca
+SEMIGRAF.PAS   vykresli OBRAZOK.TXT v grafike
+KON.PAS        graficky efekt
+                             ----- rozne -----
+OKNADEMO.PAS   demo na okienkovy interface, unit OKNA
+ROTUJBMP.PAS   pokus o rotaciu EFEKTY\VISION16.DAT
+REKLAMA.PAS    reklama na moj prvy PC pocitac
+OTACAJ.PAS     otacanie stvorca, nerobi to, co by malo
+ROTUJ_2D.PAS   otacanie stvorca, robi to, co by malo
+ANAX-X.PAS     skumanie krivky a na x-tu v zavislosti od a
+GRAF.PAS       nekreslenie grafov funkcii z dovodu nefungovania programu
+GRAFY4_P.PAS   kreslenie grafov funkcii
+LINEEDIT.PAS   editor pre ciarove zaciernenie
+3-3-2.PAS      generuje paletu 3-3-2
+PALETA.PAS     testovanie rychlosti nastavovania palety
+TEST.PAS       testovanie rychlosti priameho zapisu do VRAM
+320X200.PAS    demo na unit FASTGR
+MAPDEMO1.PAS   kreslenie mapy - pre pouzitie v strategickych hrach
+MAPDEMO2.PAS
+MAPDEMO3.PAS
+640X480.PAS    priprava unitu pre gr. mod 12h
+640X480.INC
+SIET.PAS       kresli sestuholnikovu siet, nefunguje, chybaju RUTINY.PAS
+PRIEM2.PAS     priemerovanie farieb - unit MUKOUTIL
+KURZ4.PAS      studia ohladom emulovania viacerych kurzorov mysi
+FLIPLAY.PAS    prehravac FLI animacii - cudzi (PC Revue)
+MUKOFLI.PAS    moj prehravac FLI
+BMP.PAS        prehliadac BMP suborov
+PCX.PAS        prehliadac PCX, nefunguje
+
+			Animacie a graficke efekty
+
+VOI.PAS        moje prve plynule animacie
+VOI2.PAS
+VGA256.PAS     uplne prve pokusy s VGA a SVGA
+DEMO.PAS       graficke demo VGA 320x200x256
+DEMO1.PAS      pomocne programy pre predch. demo
+DEMO2.PAS
+FLOYD.PAS      graficky efekt vhodny ako pozadie
+FLOYDROB.PAS   toto bezi rychlejsie
+FLOYDASM.PAS   toto nebezi vobec
+VISION16.PAS   graficke demo VGA 640x400x16
+EFEKTY.PAS     primitivne i menej primtivne graficke efekty
+TROJUH.PAS     rekurzivne kreslenie trojuholnika
+ZACIERNI.PAS   algoritmy pre zaciernenie obrazovky
+ZACIERN2.PAS
+ZACIERN3.PAS
+ZACIERN4.PAS
+ZACIERN5.PAS
+SETR4.PAS      trapny graficky efekt
+DITHER.PAS     nahodny dithering
+EFEKT.PAS      efekt, emulacia 256 farieb sivej

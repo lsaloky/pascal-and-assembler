@@ -1,0 +1,110 @@
+		Zoznam formatov datovych suborov MukoSoft
+		-----------------------------------------
+
+.MP	MukoSoft paleta
+	
+	Celkova dlzka: 768 bajtov
+	Struktura: 256 farieb palety, v subore su farbove zlozky v poradi RGB.
+
+-------------------------------------------------------------------------------
+.MK	MukoSoft kurzor mysi
+
+	Celkova dlzka: 64 bajtov
+	Struktura: 16 slov bitmapa priehladnosti
+	           16 slov bitmapa viditelnosti
+	Chybaju tu informacie o pozicii hotspotu kurzora. 
+
+-------------------------------------------------------------------------------	
+.MB	MukoSoft bitmapa
+
+	Dlzka je rozna.
+	Struktura: 768 bajtov paleta
+		   1   bajt   pocet bitmap v subore
+		   nasleduju udajove bloky bitmap.
+
+	Udajovy blok bitmapy: 1 bajt 	vodorovny rozmer bitmapy - RozX
+			      1 bajt	zvisly rozmer bitmapy - RozY
+		      RozX*RozY bajtov	bitmapa po riadkoch
+
+-------------------------------------------------------------------------------
+.MA	MukoSoft animacia
+
+	Dlzka je rozna.
+	Struktura: 768 bajtov paleta
+		   1   bajt   pocet animacii v subore
+		   nasleduju udajove bloky animacii.
+
+	Udajovy blok animacie: 1 bajt	pocet snimkov animacie - PocSnim
+			       1 bajt	vodorovny rozmer bitmapy - RozX
+			       1 bajt	zvisly rozmer bitmapy - RozY
+	     PocSnim*RozX*RozY bajtov	animacia ako sled bitmap
+
+-------------------------------------------------------------------------------
+.MF	MukoSoft font
+
+	Celkova dlzka: 16384 bajtov.
+	Struktura: obsahuje 256 pismen rozmerov 8*8 zaradom, pismena su ulozene
+		   po riadkoch ako bitmapy.
+
+-------------------------------------------------------------------------------
+.MSF	MukoSoft font verzia 2
+
+	Celkova dlzka: rozna.
+	Struktura: 1 bajt	verzia fontu (vzdy 2)
+		   1 bajt	vyska pismen (globalne pre vsetky)
+		   1 bajt	pocet pismen fontu (nie nutne 256)
+		   1 bajt	pocet riadkov, o ktore sa ide nizsie pri #13
+		   1 bajt	pocet volnych stlpcov medzi dvoma susednymi
+				pismenami (prakticky vzdy 1)
+		   1 bajt	sirka medzery (pocet volnych stlpcov medzi
+				znakmi oddelenymi medzerou)
+		   10 bajtov	rezerva pre neskorsie rozsirenie
+		   nasleduju udajove bloky jednotlivych pismen
+
+	Udajovy blok pismena:	
+		1 bajt			cislo pismena v ASCII tabulke
+		1 bajt			sirka pismena
+		1 bajt			pozicia dlzna (horny nibble posun v
+					x-ovej osi, dolny v y-ovej vzhladom k
+					lavemu hornemu rohu pismena.
+		1 bajt			pozicia makcena (ako pri dlzni)
+		2 bajty			rezerva pre neskorsie rozsirenie
+		Vyska*(Sirka div 2+1) bajtov	skomprimovana bitmapa pismena
+	Kompresia: pismo je 16-farebne, vojdu teda dva body do bajtu: horny
+		   nibble ma bod umiestneny vlavo, dolny napravo od neho.
+
+-------------------------------------------------------------------------------
+.MGP	MukoSoft graficky proces
+
+	Celkova dlzka:rozna
+	Struktura: 1 bajt	Verzia MGP (teraz 1)
+		   1 bajt	pocet procesov v subore
+		   14 bajtov	rezerva
+		   nasleduju procesy
+
+	Udajovu blok procesu:
+		2 bajty			dlzka procesu (word)
+		dalej ide proces, skladajuci sa z elementov
+
+	Udajovy blok elementu:
+		1 bajt			prikaz
+		dalej idu parametre patriace k prikazu
+
+	Prikaz:	Popis:			Parametre:
+	1	CiaraVodorovna		PosX,PosY,Dlzka:word;Farba:byte
+	2	CiaraZvisla		PosX,PosY,Dlzka:word;Farba:byte
+	4	PolozBod		PosX,PosY:word;Farba:byte
+	5	VyplnPlochu		PosX,PosY,RoX,RozY:word;Farba:byte
+	6	Ramcek			PosX,PosY,RozX,RozY:word;
+					FarbaVnutra,FarbaObruby:byte
+	7	Vypis			PosX,PosY:word;CisloFontu:byte
+					text:string[40];Odtien:byte
+	8	VypisPO			analogicky
+	9	PrilepBMP		PosX,PosY:word;cislo bitmapy:byte
+	10	Obdlznik		PosX,PosY,RozX,RozY:word;Farba:byte
+	11	Tlacidlo3D
+	12	PrilepBMPPO		analogicky ako 9 (PrilepBMP)
+        13      Ciara		 	X1,Y1,X2,Y2:word;Farba:byte
+	14	Bezierova krivka	X1,Y1,X2,Y2,X3,Y3,X4,Y4,PCiar:word;Farba:byte
+	15	Zmaz obrazovku		-
+	16	NastavFarbu		Cislo,R,G,B:byte 

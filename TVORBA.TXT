@@ -1,0 +1,272 @@
+
+ |      |             |                                          ____
+ |\    /|             |         ____       ____      ____       /    \  |
+ | \  / |  |     |    |        /    \     /         /    \     |        | 
+ |  \/  |  |     |    |  /    |      |    \____    |      |    |      --|--
+ |      |  |     |    |/      |      |         \   |      |  --|--      |
+ |      |  |     |    | \     |      |          |  |      |    |        |
+ |      |   \____/\   |   \    \____/     \____/    \____/     |         \____/
+
+ Lubos Saloky                         SALOKY@DURO.UPJS.SK
+ Slovensk‚ho 26
+ 04001 Kosice
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³ HRY\BANE.STA³ Ekonomicko - strategick  hra. Inspir cia z knihy
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´ " Sk£sis to s mikropoc¡tacom? "
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  BANE.PAS     ³ Hlavny program pre hru Kozmick‚ bane.
+  BANETPU.PAS  ³ Pomocn‚ proced£ry pre program vo forme TPU.
+  INSTALL.PAS  ³ Program pre edit ciu s£borov pre ukladanie poz¡ci¡.
+               ³
+Pomocn‚ s£bory:³ BANESAV.BAK  SAVEx.DAT  TOPTEN.DAT
+               ³ SAVES.INF  BANE.SCR  PRAVIDLA.SLO
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³ HRY\BANE.NOV³ Novsia verzia hry BANE, graficky neporovnatelne
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´ prepracovanejsia. Vystupuje pod n zvom KORPORACIA.
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  KORPOR.PAS   ³ Hlavny program pre hru KORPORACIA.
+  INSTALL.PAS  ³ Vytv ra nov£ strukt£ru s£borov pre ukladanie poz¡ci¡.
+               ³
+Pomocn‚ s£bory:³ MYS.INC  GRAFIKA.INC  SMETI.INC
+               ³ SYSTEM.INC  DEKLAR.INC  BITMAPY.DAT
+               ³ FONT.DAT  PALETA.DAT  KORPOR.SAV
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³ HRY\LODICKY ³ Klasick‚ lodicky pre jedneho alebo dvoch hracov.
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  LODICKY.PAS  ³ Hlavny program hry.
+               ³
+Pomocn‚ s£bory:³ PRECHOD.MF, LODICKY.MB, LOD2.MB, ZVUKLOD.SND,
+               ³ CITAJMA.TXT
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³      HRY    ³ Viac ci menej podarene hry.
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  BALLEY.PAS   ³ Simulator vyherneho automatu. Pomocn‚ s£bory:
+               ³ BALLEY.MB, BALLEY.MGP, PRECHODY.MP, HLAVNY8.MSF
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³   EFEKTY    ³ R“zne 2D grafick‚ anim cie, v„csinou pascalovsk‚.
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  DEMO.PAS     ³ Mini zbierka anim ci¡, v assembleri. Pouz¡va DEMO.DAT
+  DITHER.PAS   ³ Primit¡vny pokus o dithering.
+  FLOYD.PAS    ³ Pekny graficky efekt - vznikol nespr vnym pouzit¡m
+               ³ Floyd-Steinbergovho algoritmu.
+  VISION16.PAS ³ Jednoduch‚ pascalovsk‚ demo - 16 farieb.Pouz¡va VISION16.DAT.
+  EFEKTY.PAS   ³ Primit¡vne grafick‚ efekty ako setrice obrazovky.
+  EFEKT.PAS    ³ Uk zka priemerovania farieb a pouzitia 256 odtienov sedej.
+  ZACIERNI.PAS ³
+  ZACIERN2.PAS ³ Kolekcia programov riesiacich probl‚m, ako zaciernit
+  ZACIERN3.PAS ³ obrazovku 640 x 480 bodov, algoritmy sa l¡sia rychlostou
+  ZACIERN4.PAS ³ a sp“sobom pr ce.
+  ZACIERN5.PAS ³
+  VOI.PAS      ³ Demonstracny program na plynul£ anim ciu.
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³   EDITORY   ³ Editory fontov, paliet, bitmap, procesov, kurzorov mysi,
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´ animacii.
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  MGP12.PAS    ³ Najkomplexnejsi editor - procesy .MGP, bitmapy .MB,
+               ³ fonty .MSF, palety .MP.
+               ³ Pouz¡va EDITORY.INC, MGP12.MGP, MGP12.MB, PRECHODY.MP,
+               ³ HLAVNY8.MSF.
+  ANIMACIE.PAS ³ Editor animacii .MA
+  KURZOR.PAS   ³ Editor kurzorov mysi .MK
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³   GRAFIKA   ³ Grafick‚ programceky a niektor‚ zauj¡mav‚
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´ algoritmy.
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  SEMIGRAF.PAS ³ Nakresl¡ obr zok podla textov‚ho s£boru. Pouz¡va OBRAZOK.TXT
+  OKNADEMO.PAS ³ Jednoduch‚ roletov‚ menu - obsluha numerickym blokom.
+  ROTUJ_2D.PAS ³ Rot cia stvorca.
+  SRDCE.PAS    ³ Nakresl¡ srdce.
+  BEZIERTB.PAS ³ B‚zierove krivky v assembleri.
+  BEZIER.PAS   ³ B‚zierove krivky v Pascale.
+  SVGA2.PAS    ³ Diagnostika grafickej karty a pouzitie sluzieb VESA.
+  TEST.PAS     ³ Testovanie rychlosti priameho zapisu do VideoRAM.
+  FONTEDIT.PAS ³ Jednoduchy editor fontov.
+  PALEDIT.PAS  ³ Editor palety. Pouz¡va PALETA.DAT.
+  PALSAVE.PAS  ³ Prep¡se vytvoren£ paletu do text. s£boru. Tak£to paletu
+               ³ je mozn‚ pripojit k unitu MukoGr.TPU.
+  KURZEDIT.PAS ³ Editor kurzora mysi v grafickom rezime. Pouz¡va KURZOR.DAT.
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ 
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³   MATIKA    ³ Matematick‚ probl‚my a ich riesenie pomocou
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´ poc¡taca.
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  FERMAT2.PAS  ³ Testovanie, ci je platna Velka Fermatova veta. Pre c¡sla
+               ³ 1..4096.
+  FERMAT6.PAS  ³ Overuje c¡sla z intervalu 1..50000.
+  PRASATA.PAS  ³ Uloha o troch prasiatkach.
+  4PRVKY.PAS   ³ Usporiada 4-prvkov£ postupnost na 5 porovnani.
+  SINUS.PAS    ³ Interpolacny mnohoclen funguje len na intervale <0 , pi/2>.
+  MAXPRV31.PAS ³ Vypoc¡ta 13395-cifern‚ prvoc¡slo za 59 sek£nd na 486 DX2/66.
+               ³ Toto prvoc¡slo bolo roku 1981 najv„csie na svete.
+  MAXPRVO4.PAS ³ Vypoc¡ta vyse 60000-cifern‚ prvoc¡slo za asi 75 min£t.
+               ³ Toto prvoc¡slo bolo roku 1985 najv„csie na svete.
+  LIMITA.PAS   ³ Vypoc¡ta nevypoc¡tateln£ limitu.
+  KOMBIN.PAS   ³ Vypis vsetkych kombin ci¡ K-tej triedy z N prvkov.
+  ODMOCNI.PAS  ³ Priblizny vypocet odmocniny.
+  E.PAS        ³ Vypocet c¡sla E.
+  PERMUT.PAS   ³ Vypis vsetkych permut ci¡ pre dan‚ N.
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ 
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³  MORPHING   ³ Jednoduchy morphovac¡ algoritmus, editor anim ci¡,
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´ niekolko demonstracnych programov.
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  MORPHING.PAS ³ Uk zka element rneho morphovacieho algoritmu.
+  MM2VIEW.PAS  ³ Prezerac morphingu.
+  NOVY.PAS     ³ Vytvorenie nov‚ho s£boru pre morphing.
+  MM2.PAS      ³ Editor morphingu.
+               ³
+Pomocn‚ s£bory:³ LUBO.DAT  HODINY.DAT
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³    ROZNE    ³ Z kazd‚ho rozka troska, najm„ vsak oper cie s BIOSom
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´ a diskom.
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  KUFOR.PAS    ³ Hra Kufor.
+  POZRIDBF.PAS ³ Prezerac DBF suborov.
+  BASNICKY.PAS ³ Srandovne basnicky.
+  TLACDEMO.PAS ³ Uk zka moznost¡ tlaciarne Star LC 20 (mozno aj pre in‚
+               ³ tlaciarne).
+  LSSCAN.PAS   ³ Primit¡vny antiv¡rovy program.
+  STROM.PAS    ³ Program na vyp¡sanie stromovej strukt£ry disku.
+  DISKALL.PAS  ³ Diagnostika disku; okrem in‚ho vyp¡se straty sp“soben‚
+               ³ velkymi clustermi.
+  BLINK.PAS    ³ Prep¡nanie intenzity a blikania (8 alebo 16 farieb pozadia).
+  PROG1997.PAS ³ Ekonomick  statistika. Pouz¡va PROG1997.DAT.
+  MR610.PAS    ³ Kalkulacka. Potrebuje MR610.INC.
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³Adres r ROZNEÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³   CISLOPIS  ³ Vyuka pisania cisel na numerickej klavesnici.
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  CISLOPIS.PAS ³ Hlavny program.
+               ³
+Pomocn‚ s£bory:³ PRECHODY.MP, 3DKLAV.MP, HLAVNY8.MSF, HLAVNY11.MSF,
+               ³ HLAVNY15.MSF, CISLOPIS.MB, CISLOPIS.MGP, CISLA.TXT,
+               ³ CITAJMA.TXT
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³Adres r      ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³ ROZNE\TESTY ³ R“zne testy, najm„ matematika.
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  MINITEST.PAS ³ Hlavny program na testovanie.
+               ³
+Pomocn‚ s£bory:³ PRECHODY.MP, HLAVNY5.MSF, MATEM8.MSF,
+               ³ ZOZNAM.TXT, testy s pr¡ponami .MGP
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³Adres r      ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³  ROZNE\ZEM  ³ Mala encyklopedia o nasej Zemi.
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  ZEM.PAS      ³ Hlavny program na testovanie.
+               ³
+Pomocn‚ s£bory:³ PALETY.DAT, HLAVNY5.MSF, MATEM8.MSF, HLAVNY11.MSF,
+               ³ VELKE.MB, ZEM.MGP, GEOTEST.MGP
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³   TVISION   ³ Programy uroben‚ v Turbo Vision.
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  FUNNYTV.PAS  ³ Turbo Vision demo.
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ 
+ ³   Adres r   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³    UNITS    ³ Unity pre vselico.
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  FASTGR.PAS   ³ Rychla grafika v 320 x 200, 256 farieb. Pouz¡va
+               ³ FONT.DAT, PALETA.DAT.
+  KEYBOARD.PAS ³ Pr ca s pr¡znakovymi kl vesami a leps¡ ReadLn, obsluha 
+               ³ viacnasobneho stlacenia klaves.
+  ZVUK.PAS     ³ Ovl danie mix‚ra SB.
+  MYSKA.PAS    ³ Pr¡kazy pre ovl danie mysi.
+  MUKOGR.PAS   ³ Rychla grafika v 320 x 200, 256 farieb. Vylepsenie
+               ³ FastGr. Pouz¡va CLASSIC.FNT (8*8, 16 farieb).
+  MAINGR.PAS   ³ Rychla grafika v 320 x 200, 256 farieb. Vylepsenie
+               ³ MukoGr. 16-farebne fonty s proporcionalnym pismom
+               ³ lub. vysky, lub. mnozstvo paliet, zlozitejsie krivky a 
+               ³ utvary rovinnej grafiky, graficke procesy.
+  BMPUTIL.PAS  ³ Praca s bitmapami v halde aj priamo vo VideoRAM;
+               ³ orezavanie, otacanie, priemerovanie, ...
+  POMGR.PAS    ³ Zlozitejsie procedury grafiky: s£borov‚ okno, anim cie FLI,
+               ³ c¡tanie retazca na obrazovke ...
+  UTIL386.PAS  ³ Len pre 80386 a vyssie: niekolko drobnych procedur
+  SPEAKER.PAS  ³ Obsluha speakra ako u CRT; + ukazkove pipnutia
+  SBLASTER.PAS ³ Prehravanie zvukov cez SB: vylepsenina ZVUK.PAS
+  MYS.PAS      ³ Obsluha mysi; + kurzory a procedury pre obsluhu udalost¡
+  MUKOXMS.PAS  ³ Alokovanie a dealokovanie XMS
+  JOYSTICK.PAS ³ Obsluha joysticka
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ HUDBAÿHUDBAÿHUDBAÿHUDBAÿHUDBAÿHUDBAÿHUDBAÿHUDBAÿHUDBA
+ ³      ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³       ³ Hudba vo form te MOD a XM.
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+               ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  BUVAJ.MOD    ³ B£vaj, dieta kr sne.
+  KRISTUS.MOD  ³ Narodil sa Kristus P n.
+  MYLORD2.PAS  ³ My Lord.
+  SILA.MOD     ³ Silu mi d vas.
+  VOLAM.MOD    ³ K tebe, Pane, vol m.
+  ZIVOT.MOD    ³ Ako zivot siel.
+  MEGAMIX.XM   ³ Megamix juzanskych hitov.
+  NAPADY.XM    ³ Kadeco.
+  SOLO.XM      ³ Gitarov‚ s¢lo.
+  SRDCE.XM     ³ Srdce.
+               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+

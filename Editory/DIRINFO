@@ -1,0 +1,16 @@
+			Editory vselicoho mozneho i nemozneho
+
+Hardware: VGA, mys, klavesnica, 640 KB RAM
+
+FORMATY.DOC	suborove formaty pouzivane nasledujucimi editormi
+PALETA.PAS	*.MP	editor palety
+ANIMACIE.PAS	*.MA	editor animacii
+BITMAPY.PAS	*.MB	editor bitmap
+FONT.PAS	*.MF	editor fontov 8*8
+FONT2.PAS	*.MSF	editor proporcionalnych fontov lub. vysky
+KURZOR.PAS	*.MK	editor kurzora mysi
+MGPROCES.PAS	*.MGP	editor grafickych procesov, nespolahlivy
+MGPROCES.INC
+MGP12.PAS	*.MGP	nova verzia
+EDITORY.INC
+MTFEDIT.PAS	*.MTF	editor vektorovych fontov (Coonsove kubiky)

@@ -1,0 +1,88 @@
+----------------------
+Zapoctove ulohy - OOP2
+----------------------
+
+1. Mnozina - specialna mnozina, ktora moze mat viac vyskytov toho isteho prvku
+             napr. A = { 5, 2, 3, 3, 8, ...}, B = { 0, 3, ... }
+   operacie 
+   --------------------------
+   isMember - vrati pocet vyskytov daneho prvku v mnozine  napr. a.isMember(3) vrati 2.
+   addMember - prida prvok do mnoziny
+   union    - zjednotenie dvoch mnozin napr. a.union(b) = { 5, 2, 3, 3, 8, 0, 3, ... }
+   isEmpty  - test prazdnosti mnoziny  napr. a.isEmpty() vrati false.
+  
+   Pocet studentov: 1
+
+2. Slovnik (Dictionary) - kazdy zaznam v slovniku je dvojica (kluc, hodnota), pricom
+   kluc je jednoznacny.
+   napr. S = (("watch","hodinky, straz, hliadka"), ... )
+   operacie 
+   --------------------------
+   put - vlozi kluc a jeho hodnotu do slovnika, ak taky kluc uz existuje 
+         zmeni iba hodnotu. napr. s.put("watch","hodinky, straz, hliadka")
+   get - vrati hodnotu zadaneho kluca  napr. s.get("watch") vrati "hodinky, straz, hliadka"
+
+   Pocet studentov: 1
+   
+3. Graf (Graph) - je dany dvojicou mnozin (V, H) 
+   V - mnozina vrcholov, H - mnozina hran
+   operacie 
+   --------------------------
+   addEdge - pridanie hrany napr g.addEdge(vertex1, vertex2)
+   addVertex - pridanie vrchola g.addVertex(nazov)
+   getEdges - vrati pocet hran,v ktorych je dany vrchol 
+              napr. g.getEdges(nazovVrchola)
+
+   Pocet studentov: 2
+   
+4. Rad (Queue)
+   operacie 
+   --------------------------
+   isEmpty - test prazdnosti napr. a.isEmpty() vrati false.
+   add - pridanie prvku na zaciatok radu   napr. a.add(1)
+   remove - odobratie prvku z konca   napr.  a.remove()
+
+   Pocet studentov: 1
+
+5. Zasobnik (Stack)
+   operacie 
+   --------------------------
+   isEmpty - test prazdnosti napr. a.isEmpty() vrati false.
+   push - ulozi prvok na vrch zasobnika
+   pop - odoberie z vrchu zasobnika prvok
+   
+   Pocet studentov: 1
+
+6. Vektor (Vector) - podobne ako zasobnik, avsak mozem pridavat a odoberat z lubovolneho miesta
+   operacie 
+   --------------------------
+   isEmpty - test prazdnosti mnoziny  napr. a.isEmpty() vrati false.
+   firstElement - vrati prvy element
+   lastElement - vrati posledny element
+   elementAt(i) - vrati element na i-tej pozicii
+   insertElementAt(i) - vsunie element za i-tu poziciu
+   addElement - prida element na koniec
+   removeElementAt(i) - vymaze element na i-tej pozicii
+ 
+   Pocet studentov: 2
+
+7. Praca s retazcom
+   
+   construktor(retazec, oddelovac)
+   operacie 
+   --------------------------
+   hasMore() - vrati true ak existuje este nasledujuca polozka v retazci
+   next() - vrati dalsiu polozku oddelenu oddelovacom, ak neexistuje vrati null alebo nil
+
+   priklad: 
+  
+    ret = "a, b, c, d, e";
+    construktor(ret,",");
+    
+    a.next() = "a"
+    a.next() = "b"
+    a.next() = "c"
+    a.next() = "d"
+   
+
+   Pocet studentov: 2

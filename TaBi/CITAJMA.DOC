@@ -1,0 +1,139 @@
+			Bojova hra Tankove bitky.
+			-------------------------
+
+	Tankove bitky su bojovou hrou pre jedneho az styroch hracov. Cielom
+je prezit co najdlhsie a znicit co najviac nepriatelov.
+	
+	Po spusteni hry sa objavi hlavne menu. 
+
+Start 		znamena zaciatok bitky.
+-----
+
+Napoveda	zoznam zakladnych funkcii programu, obsluha tankov a ine.
+--------
+
+Nastavenie	nastavuju sa klavesy, ktorymi sa aktivuju jednotlive povely,
+ovladania	je mozne pouzit aj mys a joystick.
+---------
+
+Koniec		koniec hry.
+------
+
+Pocet partii	oznacuje, kolko subojov sa odohra. Suboj sa konci, ak zije
+------------	najviac jeden tank.
+
+Volba mapy	tu sa zvoli podklad, na ktorom sa bojuje. 
+----------	Mala mapa ma 320 x 320 obrazovych bodov, stredna 800 x 640,
+		velka 1200 x 880.
+
+Hrac		tu sa nastavuje, kto hra koho. Znacka v kazdom stlpci
+----		oznacuje, kto tank ovlada (nikto, clovek, pocitac).
+
+	Po kliknuti na Start alebo stlaceni "s" zacina hra.
+						----------
+
+	Objavia sa 4 okna, v kazdom je 1 tank. 1. hrac je vlavo hore, 2. je 
+vpravo hore, 3. je vlavo dole, 4. vpravo dole. 
+	V strede je obrazovka s radarom. Zobrazuje tanky aj letiace naboje.
+Nalavo (od hraca 1,3) a napravo (od hraca 2,4) su zvisle stlpceky vyjadru-
+juce poskodenie tanku.
+
+Kombinacie povelov na ovladanie: 6 znamena nastavovanie.
+--------------------------------
+
+Povel	Akcia
+1	tank dopredu
+2	tank dozadu
+3	tank vlavo
+4	tank vpravo
+5	strelba
+6 + 1	hlaven hore
+6 + 2	hlaven dole
+6 + 3	veza vlavo
+6 + 4	veza vpravo
+
+Standardne nastavenie ovladania:
+--------------------------------
+
+Povel	Hrac 1		Hrac 2		Hrac 3		Hrac 4
+1	R		8 / sipka hore	Mys dopredu	I
+2	C		2 / s. dole	Mys dozadu	M
+3	D		4 / s. vlavo	Mys vlavo	J
+4	F		6 / s. vpravo	Mys vpravo	K
+5	A		Enter		Mys lave tlac.	Medzera
+6	Lavy Shift	Ctrl		Mys prave tlac.	Alt
+
+Ako nastavit joystick:
+----------------------
+	V menu "Nastavenie ovladania" kliknite na 1. polozku (sipka vlavo)
+a stlacte tlacidlo na joysticku. Objavi sa napis Joystick a dany hrac
+bude ovladany joystickom. Potom je este potrebme joystick nakalibrovat.
+
+Prerusenie partie: herne menu
+-----------------------------
+	Klavesom Esc sa aktivuje menu, v ktorom za da zapnut / vypnut zvuk, 
+nastavit hlasitost, ukoncit partiu alebo celu hru.
+
+Ukoncenie partie:
+-----------------
+- ak zije najviac jeden tank,
+- kliknutim na polozku Koniec partie v hernom menu.
+
+Vyhodnotenie partie:
+--------------------
+Za kazdeho zniceneho nepriatela dostava hrac 1 bod. Za prezitie dostava hrac
+tolko bodov, kolko tankov bolo znicenych pred nim.
+
+Napr. 	1. znici 2., 3. znici 4., 1. znici 3. Vysledny pocet bodov je
+	0 pre druheho, 1 pre stvrteho, 2+1 pre tretieho, 3+2 pre prveho.
+
+Vyhodnotenie hry:
+-----------------
+Scitaju sa body za vsetky partie.
+
+Hardwarove naroky:
+------------------
+Nutne: procesor 80386, VGA, 640 KB RAM. 
+Odporucane: mys, zvukova karta.
+Zide sa: joystick.
+
+Naprogramoval:
+--------------
+  Lubos Saloky
+  Slovenskeho 26
+  04001 Kosice
+
+saloky@duro.upjs.sk
+
+Ak sa Vam hra pacila, poslite mi pohladnicu. Ak mate konstruktivnu kritiku,
+napiste mi mail.
+
+Pre vsetkych, ktori sa docitali az sem,
+---------------------------------------
+pripajam par vtipov.
+
+Otec pride necakane domov a svoju dceru najde v naruci neznameho mladika.
+- No toto! Ja vas naucim bozkavat moju dceru!
+- Netreba, ocko, ide nam to celkom dobre... - ozve sa dcera.
+	*	*	*
+- Tak dobre, dam vam svoju dceru za zenu, ale musite mi slubit, ze uz nikdy
+  nevyvediete nijaku hlupost, - hovori otec nastavajucemu zatovi.
+- Davam vam svoje slovo, ze toto bude posledna.
+	*	*	*
+Z manzelskej hadky:
+- Hovoris ako idiot!
+- Hovorim tak, aby si ma pochopila!
+	*	*	*
+Pytaju sa pilota:
+- Stretli ste sa uz niekedy s lietajucimi taniermi?
+- Uhm... Dva tyzdne po svadbe.
+	*	*	*
+Su dve hodiny po polnoci, ked zena energicky zobudi muza. Ten sa rozculi:
+- Co sa deje?
+- Nic sa nedeje, len nemozem pochopit, ze s takym malym platom mozes tak
+  pokojne spat!
+	*	*	*
+- Vincko, spis uz?
+- Nie, Rozalia ...
+- Tak ti nieco poviem. Nasej susedke kupil jej muz krasny kozuch ...
+- Chrrr - chrrr - chrrr ...

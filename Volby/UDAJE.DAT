@@ -1,0 +1,134 @@
+; ----- Pocet politickych stran. Ak chces zmenit tento udaj, musis dopisat
+; ----- dalsie informacie o strane aj v zvysku suboru. Max. 15 stran.
+8
+; ----- Mena politickych stran.
+HZDS
+SDK
+SOP
+SD~L
+SMK
+SNS
+ZRS
+KSS
+; ----- Pociatocne krajske preferencie: BA, Trn, Tre, NI, Zi, BB, PO, KE
+19.3 20.1 39.0 23.2 33.6 28.0 20.3 19.2
+38.8 19.7 16.1 15.7 17.4 15.9 30.5 13.8
+14.5  8.1 13.1  9.0  9.7 13.5 21.1 20.4
+12.8  8.8 11.5 10.0 14.0 14.1 14.9 11.9
+ 3.9 26.1  0.0 25.7  0.0  5.5  0.0 15.7
+ 3.6  3.9  7.5  4.5 11.2 10.4  3.0  5.6
+ 0.6  4.2  2.3  2.5  4.0  2.9  3.0  2.1
+ 0.8  1.4  2.6  2.7  2.2  3.5  3.0  2.8
+; ----- Mena troch politikov kazdej strany
+Me~ciar
+Ga~sparovi~c
+Kozl`ik
+Dzurinda
+Kukan
+~Cern`ak
+Schuster
+Mesiarik
+Presperin
+Fico
+Schm|ognerov`a
+Miga~s
+Bug`ar
+Duray
+Nagy
+Proke~s
+Slota
+Mal`ikov`a
+~Lupt`ak
+Pacola
+Kvorka
+~Da~do
+Gonda
+Zubo
+; ----- Pociatocne nastavenia volebnych programov - strany podla poradia
+2 2 1 2 4 2 2 2
+1 3 1 1 5 5 1 4
+1 1 1 1 1 4 1 4
+3 1 1 1 1 3 2 4
+2 1 1 1 1 3 2 4
+3 2 2 2 2 1 3 1
+3 3 3 3 3 4 3 2
+2 1 1 1 1 2 3 1
+2 1 1 1 1 2 1 1
+1 1 1 1 1 2 2 1
+1 1 1 1 1 2 2 3
+3 1 2 2 1 3 2 2
+2 2 2 2 2 2 2 2
+2 1 2 2 4 2 2 4
+1 2 2 2 2 1 3 5
+; ----- Pocet udalosti, na ktore mozu byt politici pozvani, max. 15.
+14
+; ----- Samotne udalosti, den v tyzdni (1-7 = Po-Ne).
+Rel`acia SITO
+1
+Sl`avnostn`a recepcia
+2
+Stretnutie s podnikate~lmi
+2
+Otvorenie ve~ltrhu
+3
+Stretnutie s finan~cn`ikmi
+3
+Sl`avnostn`e otvorenie obchodn`eho domu
+4
+Jarmok
+5
+Kult`urne sl`avnosti
+5
+De~n ~sportu a z`abavy
+6
+Dostihy
+6
+Futbal
+6
+Festival dychov`ych hudieb
+7
+Rel`acia KROKY
+7
+Festival piesn`i a tancov
+7
+; ----- Pocet slovnych urazok, max. 30
+3
+; ----- Slovne urazky - stupnica: 0 slusne, 9 najneslusnejsie. Za # sa dosadi strana.
+7 Hlavy politikov v # s`u tak`e ~lahk`e a pr`azdne, ~ze keby ich krk nedr~zal, uleteli by do vesm`iru.
+6 ~Ludia z # by rad~sej mali `is~t husi p`as~t.
+2 Politici z # nemaj`u ani po~natia o skuto~cnom stave ekonomiky Slovenska.
+; ----- Pocet kauz
+15
+; ----- Kauzy: najprv strata pref., potom popis kauzy
+0.0 Predseda # t`yral v mladosti svojho ~skre~cka.
+0.0 Politik z # vynadal novin`arovi do pap~luha sprost`eho.
+0.0 Nemenovan`y politik z # `udajne ob~ta~zoval susedku.
+0.1 Predseda # nezaplatil od janu`ara n`ajomn`e vo svojom prepychovom byte.
+0.1 Sympatizanti # `udajne zml`atili policajta.
+0.1 Pes podpredsedu # pohr`yzol die~ta.
+0.2 Nejak`y politik z # `udajne zrazil ~cloveka.
+0.2 Predseda # sa na verejnosti ukazuje so svojou "poradky~nou pre v~setky oblasti".
+0.2 Podpredseda # osobne prispel ku krachu Ko~sickej mliek`arne.
+0.3 Podpredseda # `udajne zlomil R`omovi ruku.
+0.3 Na m`itingu # do~slo k n`asilnostiam.
+0.3 Sympatizant # vykrikoval na n`amest`i nacistick`e hesl`a.
+0.4 Vysoky funkcion`ar z # zneu~zil malolet`eho chlapca.
+0.4 Viacer`i politici z # `udajne v minulosti spolupracovali s ~STB.
+0.6 Nemenovan`y politik z # z`iskal 10 % akci`i Nafty Gbely.
+; ----- Povolebne koalicie - kto s kym. 1 - v ziadnom pripade, 9 - s radostou
+; HZDS
+0 1 3 4 1 7 8 5
+; SDK
+1 0 7 6 8 2 1 1
+; SOP
+2 8 0 9 6 1 2 2
+; SDL
+2 7 9 0 6 1 2 2
+; SMK
+1 8 7 6 0 1 2 2
+; SNS
+8 3 4 2 1 0 7 2
+; ZRS
+8 1 4 3 4 7 0 5
+; KSS
+5 1 2 2 1 2 4 0

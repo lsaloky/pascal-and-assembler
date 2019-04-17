@@ -1,0 +1,33 @@
+Vazeny zakaznik,
+
+     Program CISLOPIS bol vytvoreny na motivy knihy STROJOPIS PRE SAMOUKOV
+od M. Mesiarovej. 
+
+     Zaklady ovladania: program nepouziva mys. Po spusteni sa objavi
+hlavne menu, v ktorom je v nazve kazdej polozky menu jedno pismeno
+zvyraznene. Na vykonanie danej akcie je teda potrebne stlacit toto pismeno.
+Vzdy sa da vratit klavesou ESC. Informacne texty vyzaduju po precitani
+stlacit Enter. Kazdopadne, uplne na spodku je informacny riadok, na ktorom
+sa zjavuju kombinacie klaves, ktore je mozne pouzit.
+     Pri nacviku samotneho pisania sa pouziva numericka klavesnica (blok
+klaves na pravej strane klavesnice). Po napisani cisla treba vzdy stlacit
+ENTER. Tym sa prejde na dalsi riadok. Ak spravite chybu, mozte si ju opravit
+pouzitim klavesy BACKSPACE, ale snazte sa pisat bez chyby, pretoze chyby
+znacne spomaluju pracu. Program vyhodnocuje aj to, kolkokrat ste svoju chybu 
+dodatocne opravil.
+
+     Najvacsou chybou pri vyuke byva zle polozenie prstov - maju sa dotykat
+klavesov koncami, nie bruskami. Prst ma smerovat takmer kolmo do klavesnice,
+inak nedociahnete na operatory o 2 rady vyssie od zakladnej polohy
+a problematicke je aj pisanie desatinnej ciarky o 2 rady nizsie.
+
+     HW naroky programu: procesor 286 a lepsi
+                         640 KB RAM
+                         
+     V pripade, ze ste sa pri praci s tymto programom nenaucili pisat
+naslepo, sice vam peniaze nevratim, ale urcite mi napiste. Pripadnu vylepsenu
+verziu Vam poslem zadarmo.
+
+                          Lubos Saloky, december 1997 - januar 1998.
+                          Saloky@DURO.UPJS.SK
+

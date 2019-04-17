@@ -1,0 +1,55 @@
+s0:while znak<>@ do begin
+     if znak=3 then znak:=0;
+     if znak=4 then znak:=1;
+     if znak=5 then znak:=2;
+     if znak=6 then znak:=0;
+     if znak=7 then znak:=1;
+     if znak=8 then znak:=2;
+     if znak=9 then znak:=0;
+     right;
+   end;
+        {teraz T-stroj ide nazad}
+        {nasledujucimi prikazmi sa bude znizovat pocet nenulovych cisel}
+   while znak<>@ do begin
+     left;
+     if znak=1 then begin
+       left;
+       if znak=2 then begin        {ak ide za sebou 1 a 2, nahradia sa 0,0}
+         znak:=0;
+         right;
+         znak:=0;
+       end;
+       if znak=1 then begin        {ak ide za sebou 1 a 1, nahradia sa 0,2}
+         znak:=2;
+         right;
+         znak:=0;
+       end;
+       if znak=0 then begin        {ak ide za sebou 1 a 0, nahradia sa 0,1}
+         znak:=1;
+         right;
+         znak:=0;
+       end;
+     end;
+     if znak=2 then begin
+       left;
+       if znak=2 then begin        {ak ide za sebou 2 a 2, nahradia sa 0,1}
+         znak:=1;
+         right;
+         znak:=0;
+       end;
+       if znak=1 then begin        {ak ide za sebou 2 a 1, nahradia sa 0,0}
+         znak:=0;
+         right;
+         znak:=0;
+       end;
+       if znak=0 then begin        {ak ide za sebou 2 a 0, nahradia sa 0,2}
+         znak:=2;
+         right;
+         znak:=0;
+       end;
+     end;
+   end;                            {pozicia cit. hlavy je pred zaciatkom cisla}
+   right;
+   if znak=0 then begin S1 end else S2 end;
+S1:STOP                            {cislo je del. 3}
+S2:STOP                            {cislo nie je del. 3}

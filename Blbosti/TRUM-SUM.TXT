@@ -1,0 +1,59 @@
+Boj centurii
+Do-Guti
+Mlyncek
+Mlyn
+Go-Bang
+Mu-Torere
+Pyramida
+Obrana pevnosti
+Jarmo
+Tablut
+Pentomino
+Pavucina
+Hasami sogi
+Putnici
+Reverz
+Dostihy
+Sidza
+Antilopy a sakaly
+Kravy a leopardy
+Astar
+Samotar
+Liska a husi
+Alkerk
+Velka dama
+Rohova dama
+Jednosmerna dama
+Parasutisti
+Panoramaticka dama
+Vlk a psi
+Chrty a lisky
+Goticka dama
+Princezne
+Medova dama
+Turecka dama
+Skupinova dama
+Trojuholnikova dama
+Halma
+Salta
+Zabka
+Focus
+Makarenkov sach
+Lasker
+Vari
+Maharadza a spahiovia
+Dzungla
+Na cvicisku
+Had
+Pocitac
+Tankovy boj
+Go
+Na tahu
+je:
+ KONIEC
+ NASPAT
+  ULOZ
+ NAHRAJ
+ POMOC
+
+

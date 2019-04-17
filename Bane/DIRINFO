@@ -1,0 +1,21 @@
+			"Kozmick‚ bane"  
+
+strategicka hra na namet podla knihy "Skusis to s mikropocitacom?"
+Datum:    marec 1996
+Hardware: VGA 80x25 text, mys 
+
+SAVE0.DAT	subor pre ulozenie pozicie
+SAVE1.DAT	takisto
+TOPTEN.DAT	tabulka 10 najlepsich
+BANE.DOC	dokumentacia
+SAVES.INF	subor so zoznamom suborov pre ulozenie pozicie
+BANE.OBR	TXT hlavna obrazovka
+BANE0.PAS	pra-pra-pra predok tejto hry
+BANEPOM.PAS	pomocny program pre editaciu hlavnej obrazovky
+BANETPU.PAS	tu su pomocne procedury
+INSTALL.PAS	maze strukturu pre ulozenie pozicii a ine finty
+BANE.SCR	datovy subor 
+PRAVIDLA.SLO	TXT subor s pravidlami
+BANESAV.BAK	prazdny subor pre ulozenie pozicie, NIE ZALOZNA KOPIA
+BANESCR.BAK	zalozna kopia BANE.SCR
+BANE.PAS	HLAVNY PROGRAM TEJTO HRY

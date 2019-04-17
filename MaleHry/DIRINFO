@@ -1,0 +1,9 @@
+			Hry - nepotrebuje komentar
+
+KUFOR.PAS	moja prva hra na motivy TV programu Kufor (alebo Videostop).
+BLOKESTO.PAS	Blokestos - nedokoncene. V privale vody letis proti bacilom.
+		Potrebuje BLOKESTO.MA, BLOKESTO.MB, CLASSIC.MF
+DAMA.PAS	Sada spolocenskych hier - dama. Nedokoncene.
+		Potrebuje STRS.TXT, DAMA.MA, DAMA.MB, PRECHOD.MF
+BALLEY.PAS	Videohra - otacanie kotucov. 
+		Potrebuje BALLEY.MGP, BALLEY.MB, PRECHODY.MP, HLAVNY8.MSF

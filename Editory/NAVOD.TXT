@@ -1,0 +1,257 @@
+
+
+
+
+
+                        Navod na pouzitie editora MGP12
+                        -------------------------------
+
+
+
+
+
+Napoveda je v dolnom riadku. Objavuje sa tam text vzdy, ked ma zmysel
+na danu oblast kliknut. Prikaz pre koniec programu je vpravo hore.
+Program nevypisuje spravu o tom, ze vytvorena praca nie je ulozena.
+
+        1. Zakladne pojmy
+        -----------------
+ELEMENT      obrazovy prvok (ciara, bod, ramcek, text, ...).
+PROCES       jedna obrazovka. Sklada sa z elementov.
+MGP          subor s obrazovkami (procesmi). Pripona .MGP
+FONT         pismo. Je proporcionalne, 16 farebne. Pripona .MSF
+BITMAPA      obrazok. Subory s obrazkami maju priponu .MB
+PALETA       zoznam farieb. Pripona .MP
+farba        jedna z 256 farieb
+odtien       oznacuje 16-ticu farieb. Napr. ak sa pri vypise textu
+             pouzije odtien c. 2, bude text vypisany farbami 32 - 47.
+
+        2. Prikazy pre pridavanie elementov
+        -----------------------------------
+Nachadzaju sa v pravej casti obrazovky.
+Vseobecny postup: klikni na element, zadaj parametre, umiestni element
+                  mysou na vytvaranej obrazovke (procese).
+
+Niektore elementy (pracujuce z pismom a obrazkami) vyzaduju, aby najprv
+bol v pamati aspon jeden font / bitmapa.
+
+Prikaz               Popis
+Esc                  zobrazi prave vytvorenu obrazovku.
+CiaraZvisla          prida zvislu ciaru. Bude sa pytat na dlzku a farbu.
+CiaraVodorovna       podobne.
+Bod                  zadava sa farba.
+Ciara                nefunguje celkom dobre. Zadava sa rozdiel suradnic
+                     medzi koncovymi bodmi a farba.
+VyplnPlochu          zadavaju sa rozmery a farba.
+Ramcek               rozmery, farba vnutorna a obvodova.
+Obdlznik             rozmery a farba.
+Tlacidlo3D           rozmery, odtien textu a tlacidla, text. Text sa pise
+                     aktualne nastavenym fontom.
+BezierovaKrivka      tretieho stupna. Zadavaju sa styri body a farba.
+VypisText            odtien a text. Text sa pise aktualne nastavenym fontom.
+VypisTextPriehladne  podobne.
+PrilepBMP            prilepi aktualne nastavenu bitmapu.
+PrilepBMPPriehladne  podobne.
+ZmazObrazovku        ma zmysel pouzit len ako prvy element procesu.
+NastavFarbu          nikdy nebolo pouzite.
+
+        3. Dodatocna zmena vlastnosti elementov
+        ---------------------------------------
+Pri umiestnovani:
+pozicia elementu sa meni pohybom mysi. Element sa umiestnuje kliknutim.
+Predtym je este mozne menit rozmery vsetkych elementov okrem bitmap
+a textov klavesami 8 - zmensi rozmer Y o 1
+                   2 - zvacsi rozmer Y o 1
+                   4 - zmensi rozmer X o 1
+                   6 - zvacsi rozmer X o 1
+a dalej sa da menit farba elementov klavesami "<", ">", ",", ".", teda
+pripocitanie / odpocitanie od aktualnej farby, prip. od pomocnej farby
+("<", ">" so Shiftom). Ma vyznam pri ramceku (obvodova a vnutorna farba),
+este sa da menit odtien textu a tlacidla klavesami "+" a "-".
+
+Po umiestneni:
+V okienku Info sa objavia parametre elementu. Je mozne prepisat tie hodnoty,
+ktore su v ramcekoch.
+
+        4. Hlavne menu
+        --------------
+Obsahuje 6 objektov: 1. MGP,  2. Proces,  3. Element,
+                     4. Font, 5. Bitmapa, 6. Paleta.
+Prikaz        pre objekt       Popis
+Predosly        2,3,4,5,6      ak je v pamati viac objektov daneho typu,
+                               ako aktualny sa nastavi predosly. Aktualna
+                               bitmapa, font a paleta sa zobrazuju vo svojich
+                               ramcekoch v okne Info. Informacie o aktualnom
+                               elemente su v okne Info. Aktualny proces sa
+                               zobrazi prikazom Esc.
+Cislo           2,3,4,5,6      nastavi aktualny objekt zadanim cisla.
+Dalsi           2,3,4,5,6      ak je v pamati viac objektov daneho typu,
+                               ako aktualny sa nastavi nasledujuci.
+Nahraj        1,    4,5,6      nahra dany objekt do pamate. Procesy a
+                               elementy sa nenahravaju (su sucastou MGP).
+Uloz          1                ulozi vytvoreny MGP
+Odstran         2,3            odstrani aktualny proces / element.
+Tlac            2,3            vytlaci aktualny proces / element
+
+        5. Poznamky
+        -----------
+Ak chces vypisat dlhsi text, prilepuj ho po riadkoch samostatnymi elementmi
+VypisText. Program nespracuva riadkovanie.
+
+Ak prilepujes bitmapu / pismo a nie je ziadna(y) v pamati, kreslia sa nezmysly
+a program moze posobit dojmom ze zamrzol. Treba pockat a v editacnej obra-
+zovke element odstranit.
+
+Ak si sa pomylil pri zadavani textu a chybu si zistil pri umiestnovani,
+smola. Element treba odstranit a znova umiestnit.
+
+Program sa moze zrutit, ak sa text tlacidla nezmesti do tlacidla. Vzdy
+zadaj o cosi vzcsie rozmery tlacidla a potom ich zmensuj klavesami 8,4,2,6.
+
+        6. Prechod do editora obrazkov, pisma, palety
+        ---------------------------------------------
+POZOR!!!!! Editory obrazkov a pisma nevedia plne spolupracovat s programom
+MGP12. Pracuj s nimi tak, ze po spusteni MGP12 si nahraj dany subor s pismom
+/ obrazkami, prejdi ihned do daneho editora, pracuj v nom, po vyskoceni
+z neho vyskoc aj z MGP12. Inak program spadne (castejsie ako Windowsy).
+
+Do editorov sa prechadza kliknutim na ich ramcek s vyobrazenim aktualnej
+bitmapy / palety / pisma v okne Info.
+
+
+
+
+
+
+                      Navod na pouzitie grafickeho editora
+                      ------------------------------------
+
+
+
+
+
+Novy subor s bitmapami sa vytvori, ked sa v MGP12 klikne na aktualnu
+bitmapu a ziadna nie je v pamati.
+
+        1. Kreslenie v editore
+        ----------------------
+Kliknutim na oblast vo velkom obdlzniku v centralnej casti sa prida bod.
+Farba pridavaneho bodu sa nastavuje kliknutim na zodpovedajucu farbu
+v palete (vlavo dole) a zobrazi sa v obdlzniku pri palete.
+
+        2. Dalsie prikazy editora
+        -------------------------
+Zmena pozicie velkej bitmapy: je mozne si nastavit, aby sa kreslilo na
+inu cast obrazovky.
+
+Zmena pozicie malej bitmapy: ide o obrazok v mierke 1:1 (nezvacseny)
+umiestneny hore v strednej casti. Prikazy pre zmenu pozicie su tu kvoli
+vacsim bitmapam, ked sa prekryva velka a mala bitmapa.
+
+Zmena mierky: pomer velkosti malej a velkej bitmapy.
+
+Dalsia / predosla bitmapa / cislo bitmapy: pohyb medzi bitmapami v subore.
+
+Uloz / Nahraj: Nahraj nema zmysel, subor sa nahrava v MGP12 a ak sa tam
+               nenahra, vytvori sa novy. Prikaz Uloz je jasny.
+
+Odstran: nefunguje, mal by odstranovat aktualnu bitmapu. Nerobi nic, treba
+         ho doprogramovat.
+
+Iny editor: nastavi sa editor, v ktorom su prikazy zadavane tlacidlami.
+            Je mozne medzi tymito dvoma editormi prepinat.
+
+
+
+
+
+                       Navod na pouzitie editora palety
+                       --------------------------------
+
+
+
+
+
+        1. Zadavanie farieb palety
+        --------------------------
+
+Treba si vybrat farbu z palety. Zobrazi sa v obdlzniku Aktualna farba.
+Farba ma tri zlozky (Red, Green, Blue). Farba sa meni prepisanim
+ciselnych hodnot tychto zloziek. 0 znamena nepouzita far. zlozka,
+63 je plne pouzita zlozka.
+
+        2. Dalsie povely editora
+        ------------------------
+
+Uloz / Nahraj paletu: pouzitie je jasne.
+Od / Do / Kalkuluj: vytvori rovnomerny prechod od farby "Od" po farbu "Do".
+
+
+
+
+
+                       Navod na pouzitie editora fontov
+                       --------------------------------
+
+
+
+
+Novy font sa vytvori, ak sa v MGP12 klikne na ramcek s aktualnym fontom
+a ziadny nie je v pamati.
+
+        1. Kreslenie pismena
+        --------------------
+Nemusia byt nakreslene vsetky pismena. Ak sa pri vypise textu dojde k
+pismenu, ktore nebolo zadefinovane, ignoruje sa a vypis pokracuje dalsim
+pismenom.
+
+Pismeno sa kresli v dolnej casti, kde je mriezka. Pri kresleni pismena
+sa pouziva 16 farieb, ostatne sa dosahuju pri vypise pouzitim odtiena.
+
+        2. Dalsie prikazy
+        -----------------
+
+Aktualna farba sa voli v 16-farebnej palete a zobrazuje sa vedla nej.
+Medzi pismenami sa prepina prikazmi Dalsi / Predosly / Cislo pismena.
+Mierka sluzi na zvacsenie / zmensenie editovaneho pismena.
+Uloz / Nahraj funguju klasicky.
+Odstran odstranuje pismeno. Nie je to to iste, ako zmazanie vsetkych
+pixelov pismena (v pamati ostane zopar zbytocnych udajov).
+
+        3. Poznamky
+        -----------
+
+Sirka pismena sa nedefinuje, pocitac si ju vypocita automaticky.
+Pismeno je potrebne kreslit hned zlava, inak budu v texte rusive medzery.
+
+        4. Vytvorenie noveho pisma
+        --------------------------
+
+Udaje tuna zadavane nebude neskor mozne zmenit.
+Nazov pisma: daj priponu .MSF
+Vyska: nastavuje sa tu pre vsetky pismena globalne.
+Sirka medzery: o kolko pixelov dalej sa bude pisat dalsie pismeno po
+               pouziti znaku " ".
+Vzdialenost pismen: kolko pixelov sa vynecha po kazdom pismene
+                    (daj takmer vzdy 1)
+
+
+
+
+
+                    Zaver
+                    -----
+
+
+
+
+
+Huh, tak to by bolo 45 prikazov v editore MGP12,
+                     6 prikazov pre zmenu vlastnosti elementov,
+                    15 v grafickom editore,
+                    10 v editore fontov,
+                    10 v editore palety,
+                    10 spec. klavesovych prikazov,
+                     + dialogove okno pre nove pismo.
+
+Dufam, ze som na nic nezabudol.

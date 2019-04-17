@@ -1,0 +1,21 @@
+		"Kozmick‚ bane" alebo "Korpor cia" 
+
+nedokoncena nehratelna strategicka hra na namet hry "Kozmick‚ bane".
+Datum:    februar 1997
+Hardware: VGA 320x200x256, mys
+
+FONT.DAT	subor s fontom, nekompatibilny so ziadnym mojim unitom 
+FONT.BAK	zalozna kopia
+BITMAPY.DAT	subor s bitmapami, nekompatibilny s nicim
+GREDIT.PAS	pra-pra-pra-predok editora bitmap, len pre BITMAPY.DAT
+BITMAPY.BAK	zalozna kopia bitmap
+INSTALL.PAS	instalacny program, inicializuje subor pre SAVE
+DEKLAR.INC  	deklaracia premennych
+MYS.INC		pra-pra-pra predok unitu pre mys
+SMETI.INC	deklaracia procedur, ktore nepatrili do inych .INC
+PALETA.DAT	paleta
+KORPOR.PAS	HLAVNY SUBOR TEJTO HRY 
+KORPOR.SAV  	subor pre ulozenie pozicii
+SYSTEM.INC	nic systemove, de facto by sa to mohlo volat SMETI2.INC
+GRAFIKA.INC	pra-pra-pra predok unitu pre grafiku VGA 320x200x256 farieb
+FEDITOLD.PAS	pra-pra-pra predok editora fontov

@@ -1,0 +1,18 @@
+				UNITY pre vsetko mozne i nemozne
+
+UNITS.DOC	popis unitov
+SPEAKER.PAS	PC speaker
+FASTGR.PAS	pra-predok grafickeho unitu MAINGR.PAS
+UTIL386.PAS	procedury len pre 80386/80387 a vyssie
+MYS.PAS		HLAVNY UNIT PRE MYS
+MUKOXMS.PAS	obsluha XMS
+SBLASTER.PAS	ovladanie mixera na SB
+POKTRUE.PAS	pokus o truecolor unit
+MUKOGR.PAS	predok hlavneho grafickeho unitu
+MAINGR.PAS	HLAVNY GRAFICKY UNIT PRE VGA 320x200x256
+MYSKA.PAS	predok unitu pre MYS
+BMPUTIL.PAS	utility pre pracu s bitmapami .MB, prislucha k MAINGR.PAS
+KEYBOARD.PAS	rozsirena obsluha klavesnice
+MUKOUTIL.PAS	pomocny unit k MUKOGR.PAS
+POMGR.PAS	pomocny unit doplnajuci MAINGR a BMPUTIL
+DISKY.PAS	kadeco okolo diagnostiky diskov

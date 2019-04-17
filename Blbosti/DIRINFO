@@ -1,0 +1,53 @@
+		Blbosti a najprimitivnejsie programy.
+
+nema vyznam robit zoznam, len tie vyznamnejsie:
+
+DISKY.PAS	unit pre diagnostiku ohladom diskov. Nie moj program.
+FARBY.PAS	unit pre pracu s VGA paletou
+UTILTPU.PAS	unit pre vypnutie a zapnutie kurzora
+HYPNO.PAS	trapny graficky efekt, mod 12h
+LINE.PAS	testovanie rychlosti GRAPH.TPU
+LINE320.PAS	moj pokus o rutinku pre ciaru
+MENU.PAS	pokus o unit pre pouzivatelske menu
+SKLAPAJ.PAS	pseudo 3D sklapanie obdlznika
+MATICA.PAS	operacie s maticami
+MATICE.PAS	takisto
+CD.PAS		zoznam textov na CD Computerworldu
+HEXEDIT.PAS	nedokonceny editor v hexadec. sust.
+OBCHOD.PAS	program pre skladove hospodarstvo
+ORDINUJ.PAS	lekarsky program pre spravu pacientov
+POCETDNI.PAS	pocet dni medzi dvoma datumami
+PRETEK6.PAS	vysledkovy program pre olympijske hry
+PRETEKY.PAS	ina verzia
+ORDINUJ.DAT	datovy subor pre ORDINUJ.PAS
+TRAP.PAS	umoznuje zachytit virus prehadzujuci nahodne dva bajty na disku
+ZOZNAM.PAS	telefonny zoznam
+LINEASM.PAS	2. pokus pre rutinku na kreslenie ciary
+LINEASM2.PAS	3. 
+DEMOPOM.PAS	pomocny program pre EFEKTY/DEMO
+GRAFOKNA.PAS	ndokonceny unit pre pouzivatelske menu v 12h
+FONTKONV.PAS	konverzia .MF fontu na dolestmavujuci
+TRUM-SUM.INC	nedokoncena hra TRUM-SUM na namety z knihy 
+TRUM-SUM.MB	Mu-Torere, Tablut, Go
+TRUM-SUM.PAS
+TRUM-SUM.TXT
+BLKSLE.PAS	editor okrajov pre BLOKESTOS 
+POSUNY.PAS	posuny VideoRAM, teraz sucast unitu BMPUtil
+MGPPOKUS.PAS	pokus, ci funguje system prace s MGP
+
+			Maturitne programy
+
+maturitne otazky od 1 do 15 - ukazkove programy
+			Programy pouzivajuce TurboVision
+
+TV2.PAS		blbost
+TVBEGIN.PAS	uplne zaciatky
+STAR2.PAS	seriozny program pre obsluhu Star LC 20
+TLAC.PAS	tiez pre Star, tusim obsahuje aj editor
+MEGAPROG.PAS	nedokoncene - integeracia vsetkych matematickych programov
+DIALOG.PAS	nacvik pouzivania dialogoveho okna
+INTEGRUJ.PAS	ako MEGAPROG.PAS
+TVDALEJ.PAS	skladove hospodarstvo
+OKNA.PAS	dalsie skladove hospodarstvo
+HIWORLD.PAS	len pozdrav
+FUNNYTV.PAS	demo ohladom informacnych okien

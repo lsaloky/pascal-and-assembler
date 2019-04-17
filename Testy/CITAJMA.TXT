@@ -1,0 +1,19 @@
+Vazeny zakaznik,
+
+     program MINITEST sluzi na otestovanie Vasich matematickych a fyzikalnych
+znalosti. Za kazdu spravne zodpovedanu otazku je 1 bod, za zle ospovede
+su trestne body a je nutne zvolit pri zle zodpovedanej otazke inu odpoved.
+Cielom je teda ziskat co najmenej bodov.
+
+     Ak by ste s vyhodnotenim nejakej otazky nesuhlasili (nejake pochybnosti
+som uz zazil), napiste mi svoje stanovisko.
+
+     HW naroky programu: procesor 286
+			 640 KB RAM
+
+     Program sa obsluhuje stlacenim cisla spravnej odpovede. Informacne
+texty po docitani vyzaduju stlacenie Enter. Na zaciatku sa zvolenim
+prislusneho pismena vybera, ktory test chcete.
+
+						Lubos Saloky
+						SALOKY@DURO.UPJS.SK

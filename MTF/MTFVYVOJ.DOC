@@ -1,0 +1,88 @@
+	Editor vektorovych fontov MTFEdit verzia 1.0 - systemove prilohy
+	----------------------------------------------------------------
+
+	Datovy subor: ak nie je uvedene inak, kazda polozka je typu byte
+	-------------
+
+Hlavicka: 16 byte.
+	0	verzia (1)
+	1	pocet pismen
+	2	Y1 - pomocna ciara (pre vnutornu potrebu editora)
+	3	Y2
+	4	Y3
+	5	Y4
+	6	medzera medzi pismenami
+	7 - 15	nuly
+	16 - ..	udajove bloky pismen, pocet:Hlavicka[1]
+
+Udajovy blok pismena (UBP) : premenliva dlzka
+	0	pocet kriviek
+	1	minimalny bod pismena (XMin)
+	2	maximalny (XMax)
+	3	ASCII kod pismena
+	4 - ..	udajove bloky kriviek, pocet: UBP[0]
+
+Udajovy blok krivky (UBK): premenliva dlzka
+	0	presnost vypoctu - pocet bodov na obluk krivky
+	1	pocet bodov krivky
+	2 - ..	udajove bloky bodov, pocet: UBK[0]
+
+Udajovy blok bodu (UBB): 2 byte
+	0	X-ova suradnica
+	1	Y-ova suradnica
+
+	Zoznam bitmap: subor MTFEdit.MB
+	--------------
+cislo	rozmery	popis
+
+1	5 x 5	Riadiaci bod aktualnej krivky.
+2	3 x 3	Riadiace body ostatnych kriviek aktualneho pismena.
+3	22 x 14	New.
+4	22 x 14	Kill.
+5	22 x 14	Prev.
+6	22 x 14	Next.
+7	22 x 14	Set.
+8	22 x 14	End.
+9	22 x 14	Load.
+10	22 x 14	Save.
+11	10 x 10	Fajocka.
+12	28 x 12	Pole pre zadanie hodnoty.
+13	7 x 7	Aktualny bod aktualnej krivky aktualneho pismena.
+14	22 x 14	Copy.
+
+	Zoznam procesov: subor MTFEdit.MGP
+	---------------
+cislo	popis
+
+1	Menu - pismeno, krivka, bod.
+2	Menu - pismo.
+3	Set - pismeno.
+4	Set - krivka.
+5	Set - bod.
+6	Set - pismo.
+7	Prajes si skoncit?
+8	Prajes si zacat odznova?
+9	Tlacidla v menu - pismo.
+10	Tlacidla v menu - pismeno, krivka, bod.
+11	Testovanie pisma.
+12	Oznam - dana funkcia zatial nefunguje.
+
+	Zoznam udalosti v hlavnom menu:
+	-------------------------------
+cislo	klaves	prikaz
+
+1		Polozenie bodu na pracovnu plochu
+2	c	Copy
+3	m	Pismo
+4	p	Pismeno
+5	k	Krivka
+6	b	Bod
+7	n	New
+8		Kill / End
+9	-	Prev / Load
+10	+	Next / Save
+11	s	Set
+12	t	Test
+13	y	Paste (Klavesnica)
+257		Oznacenie (Click) a pohyb (Drag) bodu
+258		Paste (Mys)

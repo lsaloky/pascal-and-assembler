@@ -1,0 +1,49 @@
+			Matematicke algoritmy na pocitaci
+                ----- projekt okolo Fermatovej vety -----
+FERMAT.PAS     zistovanie, ci je platna Velka Fermatova veta,
+FERMAT2.PAS      je tu viacero algoritmov viac ci menej rychlych
+FERMAT3.PAS      testuje do 50000
+FERMAT4.PAS
+FERMAT5.PAS
+FERMAT6.PAS
+FERTEST.PAS    testovanie umocnovacej rutiny so 48 bitovou presnostou
+       ----- tri prasiatka kontra Pascal & Assembler, simulovanie -----
+PRASATA.PAS    riesi ulohu o troch prasatach,
+PRASATA2.PAS     na tomto vidno, ako sa Pascalovsky generator nahodnych
+PRASATA3.PAS     cisel neda pouzit na simulovanie nahodnych javov
+PRASATA4.PAS
+PRASATA5.PAS
+          ----- najvacsie prvocisla zo sveta superpocitacov na PC -----
+MAXPRVOC.PAS   pocitanie velkych prvocisel za kratky cas
+MAXPRVO2.PAS
+MAXPRVO3.PAS
+MAXPRV31.PAS
+MAXPRVO4.PAS
+MAXPRVO5.PAS
+                           ----- ostatne -----
+FASTPRV1.PAS   (vraj) rychle zistenie, ci je cislo prvocislo
+ROVNICE.PAS    riesi sustavu n rovnic o n neznamych
+DIO.PAS        riesenie diofantovskych rovnic
+FAKTOR.PAS     vypocet faktorialu do 1743!
+SINUS.PAS      vypocet sinusu pomocou interpolacneho polynomu
+PERMUT.PAS     pocitanie permutacii
+PI.PAS         vypocet pi
+LIMITA.PAS     priblizny vypocet nevypocitatalnej limity
+PASTROJ.PAS    n-ty riadok Pascalovho trojuholnika
+KOMBIN.PAS     vypocet kombinacii
+ODMOCNI.PAS    vypocet odmocniny
+E.PAS          vypocet e
+FIBASM.PAS     rekurzivny vypocet Fibonnaciho postupnosti v assembleri
+4PRVKY.PAS     usporiadanie 4 prvkov pola na 5 porovnani
+UZDC.PAS       univerzalny znak delitelnosti cisel - nedokoncene
+NAHODA.PAS     nejake metody generovania nahodnych cisel pre assembler
+MINITEST.PAS   testy z knihy Matematika kolem n s. Pouz¡va *.MGP
+
+	Kalkulacka s dynamickou presnostou - na zadany pocet des. miest
+
+SCITANIE.PAS	scitava aj odcitava
+DELENIE.PAS	deli, operatory s obmedzenou presnostou
+NASOBTST.PAS	testovaci program na nasobenie
+NASOB.PAS	nasobi, len celociselne
+NASOBASM.PAS	nasobi v assembleri, nedokoncene
+

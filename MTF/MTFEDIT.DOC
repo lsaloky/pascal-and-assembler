@@ -1,0 +1,70 @@
+	Editor vektorovych fontov MTFEdit verzia 1.0 - dokumentacia
+	-----------------------------------------------------------
+
+			Uvod.
+
+Editor pouziva B-spline krivky 3. stupna s uniformnou parametrizaciou (Coonsove
+kubiky), 1 kubika ma 4 - 255 bodov. Pismeno moze pozostavat z viacerych kriviek
+(do 255). Je mozne pouzivat pri kresleni aj obycajne ciary spajajuce riadiace 
+body.
+
+			Kapitola 1: Pracovna plocha.
+
+Lavym tlacidlom sa polozi bod, ktory bude zaradeny ZA AKTUALNY bod aktualnej
+krivky. Pravym tlacidlom sa bod oznaci ako aktualny (kliknutie), a pripadne
+posuva (tahanie). Je mozne posuvat len body aktualnej krivky.
+
+			Kapitola 2: Bocne menu.
+
+Cislo uplne hore vyjadruje velkost volnej konvencnej pamate. Pod nim su napisy
+"Pismo", "Pismeno", "Krivka", "Bod". Tu prepiname objekt, s ktorym pracujeme.
+
+Pod tym su prikazy pre dany objekt: pri "Pismo" su to:
+ "New" - zacatie prace odznova
+ "End" - ukoncenie programu 
+ "Load" - nahratie pisma (*.MTF)
+ "Save" - ulozenie pisma
+ "Set" - nastavenia (Kap. 3).
+
+Pri ostatnych objektoch su to prikazy:
+ "New" - vytvorenie noveho objektu (pismena, krivky; nove body sa vytvaraju 
+         priamo na pracovnej ploche. Nova krivka a pismeno sa pridavaju 
+         NA KONIEC zoznamu kriviek, pismen. 
+ "Kill" - odstranenie objektu (bodu, krivky, pismena). 
+ "Prev" - aktualnym objektom sa stane predosly objekt (bod, krivka, pismeno).
+ "Next" - aktualnym sa stane nasledujuci.
+ "Set" - nastavenia (Kap. 3).
+ "Copy" - kopirovanie objektu do zasobnika (lave tlacidlo, resp. "c"), prile-
+          penie zo zasobnika (prave tlacidlo, resp. "y"). 
+
+Pod tym sa zobrazuje aktualne pismeno v mierke 1:5 a vedla je napis "Test",
+po kliknuti nan sa zjavi obrazovka, kde je mozne zadat kratky text a vidiet
+na obrazovke vysledok prace.
+
+			Kapitola 3: Nastavenia.
+
+ "Pismo" / "Set": 
+Sirka medzery medzi pismenami vyjadruje, aka vzdialenost bude vynechana medzi
+dvoma susednymi pismenami vo velkosti, v akej su na pracovnej ploche. 4 pomocne
+ciary pomahaju udrzat pismena na jednej urovni. Ciara zmizne, ak sa jej surad-
+nica nastavi na 0.
+ "Pismeno" / "Set":
+Ohranicenie pismena na X-ovej osi oznacuje, kde je zaciatok a koniec pismena.
+Zadava sa bud udanim suradnice, alebo mysou. Ciara zmizne, ak sa nastavi hod-
+nota 0.ASCII kod priraduje pismenu jeho kod v ASCII tabulke.
+ "Krivka" / "Set":
+Pocet vypocitanych bodov jednej kubiky oznacuje, kolkymi ciarami bude jedna
+kubika aproximovana. Pozor, kubika nie je krivka, ale len jeden z jej oblukov
+dany styrmi bodmi (1. az 4., 2. az 5., ...). Tu sa nastavuje, ak pouzivatel
+nechce kreslit krivky, ale jednoduche ciary. Pri nastaveni poctu vyp. bodov
+na 1 sa zobrazia ciary spajajuce riadiace body krivky.
+ "Bod" / "Set":
+Je tu X-ova a Y-ova suradnica bodu, ktoru je mozne menit zadanim noveho cisla.
+
+			Kapitola 4: Poznamky.
+
+  Vytvorenie neproporcionalneho pisma: nastavuj XMin aj XMax pri kazdom pismene
+na 0 a sirku medzery medzi pismenami treba dat velku (okolo 200 pixelov).
+  Kreslenie obrazkov: pomocne ciary nastav na 0, aby nezavadzali.
+
+Naprogramoval: Lubos Saloky, januar - februar 1999.

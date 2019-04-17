@@ -1,0 +1,64 @@
+3 Lubo1-3
+7 Lubo2-7
+11 Lubo3-11
+77 Lubo4-77
+41 Tak toto je dlhocizny riadok, na ktorom je hromada textu. Pozdravujem vsetkych citatelov.
+0
+35 Bol tam prazdny riadok
+9 Pokusny text
+15 Pokusny text 2
+100 Tu som!
+2 A ja som tu.
+19 Pokusny text 3
+0
+12 Zahlavie tabulky
+4 ÚÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄ¿
+4 ³100    ³1000   ³2000   ³
+4 ³20.2   ³12     ³10.5   ³
+4 ÀÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÙ
+43 Pokusny text 4
+91 Pokusny text 5
+34 ---------------------------------------------
+41 Ahoj
+79 Pokusny text 6
+12 Vytvoril:
+0
+12 Lubos Saloky
+0
+1 ----------------------
+1 ----------------------
+1 ----------------------
+1 ----  dalsi text  ----
+1 ----------------------
+1 ----------------------
+1 ----------------------
+41 Este dalsi text
+41 - - - - - - - -
+0
+41 Pokusny text 7
+41 Pokusny text 8
+0
+7 alalal alalallaa al al ala lala la la al al al al al ala la l a
+1 aoops sidjuoisd gui gerhog hosdhg vidush gosdjfoigh ohg osdhjgosdh g
+1 jidjigojibvnvnzxmvlmsdl  s u ukgh euh gihhruig huierhg ieurh guieg h
+1 c egrhgui igbuni  hgirhg uinbvuhrnbiurh gur i  uirhui ui ve gu i hue
+1 e ijbvuituhrtujsdfnbvuirhuibhruihgbid sd bsdu iu uisd uid ui hugdh u
+1 vu itrhvuirhngviuhngiuhnvishn vui u hihvui sduhcnuidhnciuhuisvhio nu
+1 ci itrumv  m vtrjmoujmv8rmtv8 umvr8mvrnm8rv.
+7 evmt io ir odu voeurncvnuivvhitvj  nin vun vusetrn vieu i un vi
+1 di oi uiroiouvmvhn ri c vnb hum vodnm cknu khn uin cuvn uhuklse nmvk
+1 c egrhgui igbuni  hgirhg uinbvuhrnbiurh gur i  uirhui ui ve gu i hue
+1 jidjigojibvnvnzxmvlmsdl  s u ukgh euh gihhruig huierhg ieurh guieg h
+1 sicmronmvn vioeence evn i vi nitrn vuin iutrng veu n vin in iovnrvnd
+1 d ioe uom voium vo rnou vnonb eitrvm n vr n n vui  uinvn  vnvn vncrn
+1 v iuvmion uo im vion ven vui  n v  uin innyuvu ehireutyr vyth tyn ty
+1 v  crwetjvnr etuwern vwe itunnv rutrn vcoer veitr ern vetr eitunvo g
+1 nrtvnu ntent urt uiryt euir uiery tuie nbvjksdfnhg uisgyweuirg ugh d
+1 cn rhtn ushtneu serghnuihgeinughurnbvjn  sdukrt eur gseyurgbeug rygr
+1 emrhjtvn rrey erughurhgunbrfguiosehgr iowenguinrigobnviuwe eurtgywug
+1 jgrf eru ghuitrhg eihngui hguke hgwuoehg uilsehgksd nbsjkhgrilse gbr
+1 igru oiweutgoiwe uyiohggfb nuise nruinrgbdknfm ngulehrge hguklh5ighj
+1 frujgoeirj gioe rrtug snbhjeuitrohg erwuklenfvjkdxhngfh rht krlseu s
+1 fdikjg ojostj o tguigksd jkgfsdhkn  kldfg kfsdg jksdh gksdh ksdfhjkf
+1 n  utrou riou ioweutri jgkldfhjiglsdj gjsdkflghklsdjh fgjkhg jfukgfg
+

@@ -1,0 +1,42 @@
+******************* Struktura pomocnych suborov: *******************
+SAVEx.DAT: file of {struktura nizsie}, dlzka 2838
+peniaze,pocetludi,cenabane,cenaskladu,cenadomu,cenabloku,cenacesty,cenarudy,
+zasoby:longint;
+spokojnost:real; {6 bajtov}
+pocetbani,pocetskladov,pocetdomov,pocetblokov:longint;
+vyrez z pola b:array [2..34,2..22] of word;{vsun do pov. b - graficka cast}
+rok,doroku:longint;
+
+BANE.SCR: file, dlzka 8000
+4000 bajtov obrazovka do $B800:$0000
+4000 bajtov pole b - ale bez grafickej casti - su v nej len nuly!!!
+     Najprv nacitaj pole b stadialto a potm tam pridaj graficku cast zo .SAV suboru.
+
+SAVES.INF: file of string, dlzka 2560
+10 retazcov - 10 nazvov pre ulozene subory
+
+TOPTEN.DAT: file of {struktura nizsie}, dlzka 2600
+10 poloziek typu record:string a Longint
+
+********************* Popis pola b *********************************
+Charakteristika grafickej casti:
+poslednych (nizsich) 8 bitov nuly
+prvych 8 bitov:
+$01 dom
+$02 bana
+$03 sklad
+$04 blok
+$0F cesta sa kombinuje s nasl. stvoricou:
+$10 cesta sa napaja hore
+$20 cesta sa napaja vpravo
+$40 cesta sa napaja dole
+$80 cesta sa napaja vlavo
+
+     Charakteristika oblast¡ citlivych na mys:
+V poli b je hornych 8 bitov nastavenych na
+1 - kupit banu		2 - predat banu		3 - kupit sklad
+4 - predat sklad	5 - Kupit dom		6 - znicit dom
+7 - kupit blok		8 - znicit blok		9 - kupit cestu
+10- znicit cestu	11- predat rudu		12- koniec roka
+13- ulozit poziciu	14- nahrat poziciu	15- pomoc
+16- koniec hry

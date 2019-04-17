@@ -1,0 +1,110 @@
+                                 MAINGR
+
+type FontStruc=record
+       OfsTab:array[0..255] of word;              {tabulka offsetov pismen}
+       Verzia,Vyska,PPismen,Posun,PMedzier,SMedzer:byte;  {hlavicka}
+       Rezerva:array[1..10] of byte;
+       Pismo:array[0..63999] of byte;             {font}
+     end;
+     BMPStruc=record
+       RozX,RozY:word;
+       BMP:array[0..63999] of byte;
+     end;
+                { ----- globalne premenne unitu ----- }
+const DataPath='d:\lubo\pascal\units\';
+      Cierna=0;Cervena=1;Oranzova=2;Zlta=3;Zelena=4;Svetlomodra=5;Modra=6;
+      Ruzova=7;Bordova=8;Hneda=9;Hnedocervena=10;
+var OknoXMin,OknoXMax,OknoYMin,OknoYMax:word;
+    VSeg:word;          {segment VideoRAM}
+    Color:byte;         {aktualna farba}
+    VypinajMys:boolean;
+
+            { ----- zakladne procedury a funkcie ----- }
+Procedure InicializujGrafiku;
+Procedure ZavriGrafiku;
+Procedure ZmazObrazovku;
+Procedure PolozBod(px,py:word;pColor:byte);
+Function ZistiBod(px,py:word):byte;
+Procedure CiaraVodorovna(px,py,Dlzka:integer);
+Procedure CiaraZvisla(px,py,Dlzka:integer);
+Procedure Ciara(x1,y1,x2,y2:integer);
+Procedure VyplnPlochu(px,py,DeltaX,DeltaY:integer);
+            { ----- praca s bitmapami ----- }
+Procedure NacitajBMP(var f:file;var p:pointer);
+Procedure NacitajAnimaciu(var f:file;Vstup:pointer);{adresa na pole pointrov}
+Procedure PrilepBMP(px,py:integer;p:pointer);
+Procedure PrilepBMPPO(px,py:integer;p:pointer);            {priehladne, okno}
+Procedure PrilepBMPPF(px,py:integer;p:pointer;Odtien:byte);{priehladne, odtien}
+Procedure StiahniBMP(px,py,RozX,RozY:integer;p:pointer);   {az po GetMem}
+            { ----- praca s fontmi ----- }
+Procedure NacitajFont(Subor:string;var p:pointer);
+Procedure Vypis(PosX,PosY:integer;p:pointer;Textik:string;Odtien:byte);
+Procedure VypisPO(PosX,PosY:integer;p:pointer;Textik:string;Odtien:byte);
+Function LengthDiak(Textik:string):byte;
+Function LengthPixel(p:pointer;Textik:string):word;
+            { ----- praca s farbami a paletou ----- }
+Procedure NastavFarbu(cislo,r,g,b:byte);
+Procedure ZistiFarbu(cislo:byte;var r,g,b:byte);
+Procedure NacitajPaletu(Subor:string;var p:pointer);
+Procedure NastavPaletu(p:pointer);
+            { ----- dalsie procedury a funkcie ----- }
+Procedure Obdlznik(px,py,DeltaX,DeltaY:integer);
+Procedure Ramcek(px,py,DeltaX,DeltaY,FarbaVnutra:integer);
+Procedure CakajNaVOI;                                 {vertikalne zatemnenie}
+Procedure Tlacidlo3D(px,py,RozX,RozY:word;Pismo:pointer;Napis:string;
+                     Odtien,ONadpisu:byte;Stlacene:boolean);
+Procedure NacitajMGP(var f:file;var Kam:pointer);
+Procedure VykresliMGP(p1,PoleBMP,PolePisma:pointer);   {sama si vypne mys}
+             { ----- nepouzitelne pre uzivatela, len pre dalsie unity ----- }
+Procedure AkTrebaVypniMys;
+Procedure AkTrebaZapniMys;
+
+                                 BMPUTIL
+
+     { ----- praca s bitmapami v halde ----- }
+procedure NahodnaBMP(RozX,RozY:word;Farba:byte;var p:pointer);
+procedure PriemerujBMP(p:pointer);
+procedure PreklopBMP(p:pointer;Os:char);
+  {os: -|/\ , po diagonalach, LEN STVORCOVE BITMAPY}
+procedure RotujBMP(p:pointer);
+  {LEN STVORCOVE BITMAPY PARNEHO ROZMERU
+  rotuje o 90ø v smere hod. ruc. okolo stredu}
+procedure UpravJasBMP(p:pointer;Nas,Del:byte);
+  {nasobok a delitel jasovej zlozky farby}
+procedure KopirujBMP(Zdroj,Ciel:pointer;x,y,RozX,RozY:word);
+procedure ZmenMierkuBMP(Zdroj,Ciel:pointer;XNas,XDel,YNas,YDel:byte);
+  {rozmery nie nad 255, zatial LEN ZMENSOVANIE}
+     { ----- praca s bitmapami priamo v obrazovej pamati ----- }
+procedure PosunVRAMSpredu(StartX,StartY,RozX,RozY,KolkoX,KolkoY:integer);
+procedure PosunVRAMZozadu(StartX,StartY,RozX,RozY,KolkoX,KolkoY:integer);
+
+                                 MYS
+
+type TKurzor=array[0..33] of word;
+Preddefinovane kurzory:  Hodiny,SipkaDole,SipkaHore,SipkaVlavo,SipkaVpravo,
+                         Otaznik,Obycajny,Terc,Ruka.
+const Lave:byte=1;
+      Prave:byte=2;
+var MysX,MysY:word;
+procedure ZM; {Zapni mys}
+procedure VM; {Vypni mys}
+procedure OknoKurzora(x1,x2,y1,y2:word);
+procedure ZistiPoziciu(var x,y:word;var Tlacidla:byte);
+procedure NastavKurzor(x,y:word);
+procedure CakajNaPustenie;
+procedure NastavTvarKurzora(Zdroj:word);
+function ObsluzUdalost(Aktiv,Klav:pointer):word;
+function ObsluzUdalostSHelpom(Aktiv,Klav,Pismo,Help:pointer):word;
+{Aktiv:XMin,YMin,XMax,Ymax; ukonci (400,0,0,0);
+ Klav ukonci #255; prave tlacidlo = pripocitane 256}
+
+                                 POMGR
+
+var AttrCitaj:record
+                  Blik:word;
+                  FarbaTextu,FarbaKurzora:byte;
+                  Font:pointer;
+                end;
+Procedure Citaj(PosX,PosY:word;Max:byte;var s:string);
+Procedure SuboroveOkno(Font:pointer;Titul,Filter:string;var Nazov:string);
+procedure NahrajAPustFLI(Nazov:string);

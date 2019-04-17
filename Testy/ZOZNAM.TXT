@@ -1,0 +1,12 @@
+mnoziny.mgp
+Mno~ziny
+algebra.mgp
+Algebra
+nerov.mgp
+Nerovnice
+postup.mgp
+Postupnosti
+kt.mgp
+Kvantov`a te`oria
+geotest.mgp
+Anat`omia Zeme

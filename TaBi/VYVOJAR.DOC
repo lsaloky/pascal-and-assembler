@@ -1,0 +1,121 @@
+Ovladanie: vyznam poloziek pola DefPovel objektu TTank
+----------
+DefPovel:array[1..6] of char;
+Prvok	Popis
+1.	pohyb dopredu
+2.	dozadu
+3.	vlavo
+4.	vpravo
+5.	strelba
+6.	nastavovanie:
+6. + 1.	hlaven dole
+6. + 2.	hlaven hore
+6. + 3.	veza vlavo
+6. + 4.	veza vpravo
+
+Ovladanie: vyznam obsahu poloziek pola DefPovel objektu TTank
+----------
+0..127	klavesnica - pole Zoznam
+129	pravy Shift
+130	lavy Shift
+131	Ctrl
+132	Alt
+254	Mys
+255	Joystick
+
+Ovladanie: pole AktPovel:array[1..6] of boolean;
+----------
+i-ta polozka je nastavena na True, ak bol dany prikaz z i-tej polozky DefPovel
+
+Uhly: objektu TTank
+-----
+IUhol		uhol tanku	v nasobkoch 9 stupnov, od kl. poloosi x, 
+				v smere hod. ruciciek: vlavo 0, dole 10, vpravo
+				20, hore 30.
+IUholNatocenia	uhol veze tanku	takisto
+ElevacnyUhol	uhol hlavne	realne cislo v radianoch
+
+
+Struktura .MAP suboru:
+----------------------
+offset	typ	popis
+0	word	nula vzdy
+2	word	rozmer X
+4	word	rozmer Y
+6-15	word	5 * nula vzdy
+16	byte	RozX*RozY mapa po riadkoch
+
+Mapy:
+-----
+mala	20 x 20
+stredna	50 x 40
+velka	75 x 55
+
+Rozmery bitmap - policok mapy: musi byt 16 x 16
+------------------------------
+
+Editor map:
+-----------
+mys - vyber bitmapy, prilepenie bitmapy na hraci plan
+klavesnica - prikazy Uloz, Nahraj, vLavo, vPravo, Hore, Dole, Koniec.
+!!!!! Pri spustani je potrebne zadat editovany subor priamo do programu !!!!!
+
+Zoznam bitmap:
+--------------
+1	40 x 40	pozadie pod menu
+2	14 x 14	sipka vlavo
+3	14 x 14	sipka vpravo
+4	14 x 14	sipka hore
+5	14 x 14	sipka dole
+6	14 x 14	symbol naboja	
+7	14 x 14	symbol uhla
+8	28 x 12	pole pre hodnotu (hlavne menu)
+9	30 x 18	tank
+10	8 x 6	veza tanku (nepouzivana bitmapa)
+11	8 x 2	hlaven dlha ( nep. b.)
+12	6 x 2	hlaven stredna (nep. b.)
+13	4 x 2	hlaven kratka (nep. b.)
+14	12 x 10	veza tanku
+15	12 x 6	hlaven dlha
+16	10 x 6	hlaven stredna
+17	8 x 6	hlaven kratka
+18	2 x 2	naboj (nepouzivana bitmapa)
+19	4 x 4	naboj (nep. b.)
+20	6 x 6	naboj (nep. b.)
+21	8 x 8	naboj (pouziva sa v menu)
+22	2 x 2	naboj
+23 	3 x 3	naboj
+24 	4 x 4	naboj
+25	5 x 5	naboj
+26 	6 x 6	naboj
+27 	7 x 7	naboj
+28	16 x 16	bitmapa po vybuchu
+29	44 x 12	pole pre hodnotu (Nastavenie ovladania)
+
+Zoznam procesov:
+----------------
+1	kalibracia joysticka
+2 	takisto
+3	takisto
+4	menu - nastavenie ovladania
+5	herny plan
+6	menu - hlavne
+7	menu - nastavenia pocas hry (Esc)
+8	napoveda c. 1
+9	vyhodnotenie
+10	napoveda c. 2
+
+Zoznam animacii:
+----------------
+cislo	rozmery	snimkov	popis
+1	5 x 5	20	vyfuk
+2	16 x 16	16	vybuch naboja
+
+Setup:
+------
+0	boolean	pritomnost SB
+1	byte	interrupt
+2	byte	DMA
+3	byte	hlasitost Master
+4	byte	hlasitost Voice
+5	boolean	pritomnost joysticka
